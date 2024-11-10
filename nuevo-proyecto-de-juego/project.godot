@@ -10,7 +10,20 @@ config_version=5
 
 [application]
 
-config/name="Nuevo Proyecto de Juego"
+config/name="WarRoom"
 run/main_scene="res://Escenas/sala_guerra.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+MusicaFondo="*res://Singleton/musica_fondo.tscn"
+
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="ignore"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

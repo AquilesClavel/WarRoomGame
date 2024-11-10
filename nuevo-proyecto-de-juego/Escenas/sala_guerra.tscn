@@ -1,10 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://bg5uilnq73rhe"]
+[gd_scene load_steps=12 format=3 uid="uid://bg5uilnq73rhe"]
 
+[ext_resource type="Script" path="res://Scripts/sala_guerra.gd" id="1_i3ahv"]
 [ext_resource type="Texture2D" uid="uid://cogimwj2g688l" path="res://Assets/Strangelove.jpg" id="1_xv7wj"]
+[ext_resource type="VideoStream" path="res://Assets/Fondo.ogv" id="2_ox1iu"]
+[ext_resource type="AudioStream" uid="uid://jm0l60ya234f" path="res://Assets/War room ambience.mp3" id="3_cpa1l"]
+[ext_resource type="Script" path="res://Scripts/voices.gd" id="5_rf04x"]
+[ext_resource type="AudioStream" uid="uid://bndy0yg5momh1" path="res://Assets/Random voices/4_old_gentlemen_murm.mp3" id="6_dyp6t"]
+[ext_resource type="AudioStream" uid="uid://m4fkkvdnn0br" path="res://Assets/Random voices/4_old_gentlemen_murm (1).mp3" id="7_anpad"]
+[ext_resource type="AudioStream" uid="uid://b46qhum7w72lq" path="res://Assets/Random voices/man_talking_quietly (1).mp3" id="8_37p3k"]
+[ext_resource type="AudioStream" uid="uid://cj63p5sf3v4oq" path="res://Assets/Random voices/man_talking_quietly.mp3" id="9_qwqoy"]
+[ext_resource type="Texture2D" uid="uid://bjfwjhk6g37r3" path="res://Assets/Logo.png" id="10_bfx4c"]
 
-[sub_resource type="AudioStream" id="AudioStream_qqaky"]
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_67fvp"]
+streams_count = 4
+stream_0/stream = ExtResource("6_dyp6t")
+stream_1/stream = ExtResource("7_anpad")
+stream_2/stream = ExtResource("8_37p3k")
+stream_3/stream = ExtResource("9_qwqoy")
 
 [node name="SalaGuerra" type="Node2D"]
+script = ExtResource("1_i3ahv")
 
 [node name="Fondo" type="Sprite2D" parent="."]
 visible = false
@@ -13,5 +28,62 @@ texture = ExtResource("1_xv7wj")
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.606, 0.8)
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = SubResource("AudioStream_qqaky")
+[node name="Ambience" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(0, -279)
+stream = ExtResource("3_cpa1l")
+volume_db = -10.895
+autoplay = true
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Control"]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -10.112
+offset_left = -951.0
+offset_top = -0.519989
+offset_right = 950.0
+offset_bottom = 405.0
+stream = ExtResource("2_ox1iu")
+autoplay = true
+expand = true
+loop = true
+
+[node name="BtnJugar" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = -913.0
+offset_top = -145.0
+offset_right = -567.0
+offset_bottom = -55.0
+theme_override_font_sizes/font_size = 46
+text = "Jugar"
+
+[node name="Voices" type="Node2D" parent="."]
+script = ExtResource("5_rf04x")
+
+[node name="Chat1" type="AudioStreamPlayer2D" parent="Voices"]
+position = Vector2(790, -118)
+stream = SubResource("AudioStreamRandomizer_67fvp")
+volume_db = -16.838
+
+[node name="Chat2" type="AudioStreamPlayer2D" parent="Voices"]
+position = Vector2(-794, -105)
+stream = SubResource("AudioStreamRandomizer_67fvp")
+volume_db = -16.838
+
+[node name="Timer" type="Timer" parent="Voices"]
+wait_time = 6.823
+autostart = true
+
+[node name="Logo" type="Sprite2D" parent="."]
+position = Vector2(-626, -306)
+scale = Vector2(1.16607, 1)
+texture = ExtResource("10_bfx4c")
+
+[connection signal="pressed" from="Control/BtnJugar" to="." method="_on_btn_jugar_pressed"]
+[connection signal="timeout" from="Voices/Timer" to="Voices" method="_on_timer_timeout"]
