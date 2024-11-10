@@ -6,7 +6,6 @@
 [node name="MusicaFondo" type="Node"]
 script = ExtResource("1_7ows5")
 
-[node name="MusicaFondo" type="AudioStreamPlayer2D" parent="."]
+[node name="MusicaFondo" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_xi0qh")
 volume_db = 8.914
-parameters/looping = true
