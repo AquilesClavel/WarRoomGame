@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bg5uilnq73rhe"]
+
+[ext_resource type="Texture2D" uid="uid://cogimwj2g688l" path="res://Assets/Strangelove.jpg" id="1_xv7wj"]
+
+[sub_resource type="AudioStream" id="AudioStream_qqaky"]
+
+[node name="SalaGuerra" type="Node2D"]
+
+[node name="Fondo" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("1_xv7wj")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.606, 0.8)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStream_qqaky")
