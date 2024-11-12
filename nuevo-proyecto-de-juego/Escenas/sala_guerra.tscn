@@ -22,7 +22,6 @@ stream_3/stream = ExtResource("9_qwqoy")
 script = ExtResource("1_i3ahv")
 
 [node name="Fondo" type="Sprite2D" parent="."]
-visible = false
 texture = ExtResource("1_xv7wj")
 
 [node name="Camera2D" type="Camera2D" parent="."]

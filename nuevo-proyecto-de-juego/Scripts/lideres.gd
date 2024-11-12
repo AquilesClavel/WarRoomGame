@@ -4,11 +4,19 @@ extends Node2D
 @onready var CamaraLider2 = $CamaraLider2
 @onready var CamaraLider3 = $CamaraLider3
 @onready var CamaraLider4 = $CamaraLider4
+@onready var btnLider1 = $Control/Lider1
+@onready var btnLider2 = $Control/Lider2
+@onready var btnLider3 = $Control/Lider3
+@onready var btnLider4 = $Control/Lider4
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	CamaraGeneral.set_enabled(true)
-	
+	#btnLider1.set_enabled(false)
+	#btnLider2.set_enabled(false)
+	#btnLider3.set_enabled(false)
+	#btnLider4.set_enabled(false)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
