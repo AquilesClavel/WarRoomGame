@@ -1,0 +1,100 @@
+[gd_scene load_steps=10 format=3 uid="uid://ba0it1i70j3fx"]
+
+[ext_resource type="Script" path="res://Scripts/PruebaAutomata/lider_1.gd" id="1_5g4j5"]
+[ext_resource type="Script" path="res://Scripts/PruebaAutomata/Automata.gd" id="1_b85g5"]
+[ext_resource type="Script" path="res://Scripts/PruebaAutomata/lider_2.gd" id="2_v73nm"]
+[ext_resource type="Script" path="res://Scripts/PruebaAutomata/lider_3.gd" id="3_5now5"]
+[ext_resource type="Script" path="res://Scripts/PruebaAutomata/lider_4.gd" id="4_eqbvo"]
+[ext_resource type="Texture2D" uid="uid://davce3lrhht6b" path="res://Scripts/PruebaAutomata/Annoying_Orange.png" id="6_n1ijt"]
+[ext_resource type="Texture2D" uid="uid://d1h0oa5nh0e6l" path="res://Scripts/PruebaAutomata/gato mago.jpeg" id="7_r8865"]
+[ext_resource type="Texture2D" uid="uid://degjui75nn8gm" path="res://Scripts/PruebaAutomata/images.jpg" id="8_1pmqp"]
+[ext_resource type="Texture2D" uid="uid://cvl0aggy3mjyn" path="res://Scripts/PruebaAutomata/PECLASS.png" id="9_o78qa"]
+
+[node name="PruebaAutomata" type="Node2D"]
+position = Vector2(178, 179)
+script = ExtResource("1_b85g5")
+
+[node name="Lider1" type="Node2D" parent="."]
+script = ExtResource("1_5g4j5")
+
+[node name="Lider2" type="Node2D" parent="."]
+script = ExtResource("2_v73nm")
+
+[node name="Lider3" type="Node2D" parent="."]
+script = ExtResource("3_5now5")
+
+[node name="Lider4" type="Node2D" parent="."]
+script = ExtResource("4_eqbvo")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button1" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 231.0
+offset_top = 192.0
+offset_right = 309.0
+offset_bottom = 219.0
+text = "1 P"
+
+[node name="Button2" type="Button" parent="Control"]
+offset_left = 344.0
+offset_top = 193.0
+offset_right = 422.0
+offset_bottom = 224.0
+text = "2 N"
+
+[node name="Button3" type="Button" parent="Control"]
+offset_left = 464.0
+offset_top = 188.0
+offset_right = 542.0
+offset_bottom = 219.0
+text = "3 S"
+
+[node name="L1" type="TextureButton" parent="Control"]
+layout_mode = 0
+offset_left = 94.0
+offset_top = 14.0
+offset_right = 207.0
+offset_bottom = 119.0
+texture_normal = ExtResource("6_n1ijt")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="L2" type="TextureButton" parent="Control"]
+offset_left = 236.0
+offset_top = 15.0
+offset_right = 349.0
+offset_bottom = 120.0
+texture_normal = ExtResource("7_r8865")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="L3" type="TextureButton" parent="Control"]
+offset_left = 398.0
+offset_top = 17.0
+offset_right = 511.0
+offset_bottom = 122.0
+texture_normal = ExtResource("8_1pmqp")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="L4" type="TextureButton" parent="Control"]
+offset_left = 572.0
+offset_top = 18.0
+offset_right = 685.0
+offset_bottom = 123.0
+texture_normal = ExtResource("9_o78qa")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="Control/Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Control/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Control/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Control/L1" to="." method="_on_l_1_pressed"]
+[connection signal="pressed" from="Control/L2" to="." method="_on_l_2_pressed"]
+[connection signal="pressed" from="Control/L3" to="." method="_on_l_3_pressed"]
+[connection signal="pressed" from="Control/L4" to="." method="_on_l_4_pressed"]
