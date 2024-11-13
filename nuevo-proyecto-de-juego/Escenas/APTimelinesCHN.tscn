@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://fr0chp11xte3"]
+
+[ext_resource type="Script" path="res://Scripts/APTimelinesCHN.gd" id="1_q4t5x"]
+
+[node name="APTimelinesCHN" type="Node"]
+script = ExtResource("1_q4t5x")
