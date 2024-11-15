@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bndy0yg5momh1"
+path="res://.godot/imported/4_old_gentlemen_murm.mp3-61c484a4cba4e5ae6790a0f8b584161b.mp3str"
+
+[deps]
+
+source_file="res://Assets/Random voices/4_old_gentlemen_murm.mp3"
+dest_files=["res://.godot/imported/4_old_gentlemen_murm.mp3-61c484a4cba4e5ae6790a0f8b584161b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
