@@ -1,0 +1,31 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(1, 1, 1, 1),
+"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+"default_portrait": "Default",
+"description": "Un líder con un pasado marcado por el conflicto, su presencia transmite firmeza y determinación. No es un hombre que se deje impresionar fácilmente y valora la fortaleza por encima de todo. Su enfoque es estratégico y siempre está mirando más allá de lo inmediato, buscando restaurar la influencia de su país en regiones que considera clave para su seguridad y prosperidad. Los compromisos pueden ser difíciles con él, y su sentido de orgullo y lealtad a su nación es inquebrantable.
+
+",
+"display_name": "Dmitri Volkov",
+"mirror": false,
+"nicknames": [""],
+"offset": Vector2(0, 0),
+"portraits": {
+"Default": {
+"export_overrides": {
+"image": "\"res://Assets/Personajes/Dmitri RU/DmitriFinal.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+"scale": 1.0
+}
