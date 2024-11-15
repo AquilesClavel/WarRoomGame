@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://jm0l60ya234f"
+path="res://.godot/imported/War room ambience.mp3-0abca79b66077d22b61a6f1b6f03f91b.mp3str"
+
+[deps]
+
+source_file="res://Assets/War room ambience.mp3"
+dest_files=["res://.godot/imported/War room ambience.mp3-0abca79b66077d22b61a6f1b6f03f91b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

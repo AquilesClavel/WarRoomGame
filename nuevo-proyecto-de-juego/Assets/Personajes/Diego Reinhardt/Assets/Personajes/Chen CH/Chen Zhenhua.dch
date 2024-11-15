@@ -1,0 +1,31 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(1, 1, 1, 1),
+"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+"default_portrait": "Default",
+"description": "Un líder calculador y diplomático, que no actúa impulsivamente. Su visión a largo plazo le permite navegar las complejidades del escenario internacional con una calma impresionante. Para él, las negociaciones son una oportunidad para fortalecer su nación sin necesidad de conflicto abierto. Sus intereses van más allá de lo inmediato, y cada movimiento está pensado para asegurar una posición más fuerte en un futuro cercano. No es fácil saber cuándo está dispuesto a ceder y cuándo no.
+
+",
+"display_name": "Chen Zhenhua",
+"mirror": false,
+"nicknames": [""],
+"offset": Vector2(0, 0),
+"portraits": {
+"Default": {
+"export_overrides": {
+"image": "\"res://Assets/Personajes/Chen CH/ChenFinal.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+"scale": 1.0
+}
