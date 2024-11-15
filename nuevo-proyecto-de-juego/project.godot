@@ -25,6 +25,7 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 directories/dch_directory={
 "Agente A": "res://Assets/Personajes/Aurora/Agente A.dch",
 "Chen Zhenhua": "res://Assets/Personajes/Chen CH/Chen Zhenhua.dch",
+"Diego Reinhardt": "res://Assets/Personajes/Diego/Diego Reinhardt.dch",
 "Dmitri Volkov": "res://Assets/Personajes/Dmitri RU/Dmitri Volkov.dch",
 "Ethan Caldwell": "res://Assets/Personajes/Ethan US/Ethan Caldwell.dch",
 "Kim Tae-woo": "res://Assets/Personajes/Kim NKR/Kim Tae-woo.dch",
