@@ -2,7 +2,7 @@
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
 "_translation_id": "",
-"color": Color(0.52321, 0.970703, 0.341263, 1),
+"color": Color(0.431931, 0.0680542, 0.871094, 1),
 "custom_info": {
 "sound_mood_default": "",
 "sound_moods": {},
@@ -14,16 +14,6 @@
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
-"portraits": {
-"": {
-"export_overrides": {
-"image": ""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-}
-},
+"portraits": {},
 "scale": 1.0
 }
