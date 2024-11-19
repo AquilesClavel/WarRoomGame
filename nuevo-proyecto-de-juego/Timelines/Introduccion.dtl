@@ -1,5 +1,5 @@
 join "Agente A" leftmost [animation="Fade In" length="1.0"]
-"Agente A": Bienvenido, agente. Soy Agente A, y soy quien supervisará esta misión crítica.
+"Agente A": Bienvenido, agente. Soy Agente Aurora, y soy quien supervisará esta misión crítica.
 "Agente A": Estamos enfrentando una crisis sin precedentes, y necesitamos tu ayuda ahora más que nunca.
 "Agente A": Antes de continuar, necesito saber tu nombre, agente. Es importante que todos los detalles estén en orden antes de que ingreses a la sala de negociaciones.
 [text_input text="¿Cuál es tu nombre de agente?" var="nombreJugador" placeholder="Nombre"]
@@ -7,4 +7,23 @@ join "Agente A" leftmost [animation="Fade In" length="1.0"]
 "Agente A": Los líderes de las naciones más poderosas están en una negociación frágil que podría decidir el destino de la humanidad. Un solo error… y el mundo podría caer en una guerra nuclear.
 "Agente A": Millones de vidas están en tus manos. ¿Estás listo para asumir este desafío?"
 - Entendido, Agente A.
+- ...
+join "Diego Reinhardt" rightmost
+"Diego Reinhardt": Diego Reinhardt. Experto en ciberseguridad y encargado de que cada palabra que digas, {nombreJugador}, permanezca entre nosotros. Este no es un juego para mí, es mi trabajo. Y mi trabajo es impecable
+"Diego Reinhardt": Confía en mí, {nombreJugador}, este sistema es tan seguro como puede serlo. Mi único consejo\: mide tus palabras. Aunque nadie las pueda robar, eso no significa que no puedan usarse en tu contra más adelante.
+update "Agente A" center
+join Hector leftmost
+Hector: Héctor Marlowe, experto en relaciones internacionales. Mi trabajo es analizar cada palabra, cada gesto y cada intención de los líderes con los que negociamos. {nombreJugador}, juntos podemos evitar el peor desenlace imaginable.
+Hector: Yo me ocupo de los detalles que otros prefieren ignorar. Cada líder tiene un interés, una debilidad y un punto de quiebre. Si jugamos bien nuestras cartas, {nombreJugador}, podemos convertir esas piezas en un acuerdo que funcione.
+- Hola, a los dos.
+	"Agente A": ¿Ya terminaste de romper el hielo, {nombreJugador}? Porque esto no es un concurso de cortesía. Mucha presentación, poco avance. ¡A trabajar! El reloj no se detiene.
+- ...
+	"Agente A": ¿Ya terminaste de romper el hielo, {nombreJugador}? Porque esto no es un concurso de cortesía. Mucha presentación, poco avance. ¡A trabajar! El reloj no se detiene.
+- Mucha presentación, manos a la obra ¿no?
+	"Agente A": Por fin alguien con sentido de urgencia. Estoy de acuerdo, {nombreJugador}. Es hora de que empieces a actuar. Todo depende de ti ahora.
+leave --All--
+join "Diego Reinhardt" leftmost
+"Diego Reinhardt": La computadora está lista, {nombreJugador}. Solo haz clic en ella cuando quieras empezar. Te guiaré a través de lo que necesitas hacer después.
+- ¿No es un poco vieja esta computadora? ¿No se puede hacer algo más moderno?
+	"Diego Reinhardt": ¿Vieja? No es la palabra correcta, {nombreJugador}. Esta tecnología está tan anticuada que es casi imposible de hackear o atacar. Nada en el mercado actual es tan seguro como esto. A veces, lo antiguo es lo más confiable.
 - ...
