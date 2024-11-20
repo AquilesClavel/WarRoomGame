@@ -94,6 +94,9 @@ func _on_kimkr_pressed() -> void:
 
 func terminoCoreano():
 	actualizarEstatusKimKR()
+	actualizarEstatusChenCH()
+	actualizarEstatusDimitriRU()
+	actualizarEstatusEthanUS()
 	CallKim.hide()
 
 func actualizarEstatusKimKR():
@@ -142,28 +145,49 @@ func actualizarEstatusKimKR():
 	
 	print(estado_actual)
 
-var last_timelineKR = ""
+var last_timelinesKR = {
+	"Estado Negativo": "",
+	"Estado Positivo": "",
+	"Estado Muy Positivo": "",
+	"Estado Extremadamente Positivo": "",
+	"Estado Muy Negativo": "",
+	"Estado Extremadamente Negativo": "",
+	"Estado Bloqueado": ""
+}
 
 func escogerTimelineCoreano():
 	var estatusKR = btnKimKR.obtener_estado()
+	var opciones = []
+	
 	match estatusKR:
 		"Estado Negativo":
-			last_timelineKR = escoger_random(["KimNegativo1", "KimNegativo2"], last_timelineKR)
+			opciones = ["KimNegativo1", "KimNegativo2"]
 		"Estado Positivo":
-			last_timelineKR = escoger_random(["KimPositivo1", "KimPositivo2"], last_timelineKR)
+			opciones = ["KimPositivo1", "KimPositivo2"]
 		"Estado Muy Positivo":
-			last_timelineKR = escoger_random(["KimMuyPositivo1", "KimMuyPositivo2"], last_timelineKR)
+			opciones = ["KimMuyPositivo1", "KimMuyPositivo2"]
 		"Estado Extremadamente Positivo":
-			last_timelineKR = escoger_random(["KimExtremadamentePositivo1", "KimExtremadamentePositivo2"], last_timelineKR)
+			opciones = ["KimExtremadamentePositivo1", "KimExtremadamentePositivo2"]
 		"Estado Muy Negativo":
-			last_timelineKR = escoger_random(["KimMuyNegativo1", "KimMuyNegativo2"], last_timelineKR)
+			opciones = ["KimMuyNegativo1", "KimMuyNegativo2"]
 		"Estado Extremadamente Negativo":
-			last_timelineKR = escoger_random(["KimExtremadamenteNegativo1", "KimExtremadamenteNegativo2"], last_timelineKR)
+			opciones = ["KimExtremadamenteNegativo1", "KimExtremadamenteNegativo2"]
 		"Estado Bloqueado":
-			last_timelineKR = escoger_random(["KimBloqueado1", "KimBloqueado2"], last_timelineKR)
+			opciones = ["KimBloqueado1", "KimBloqueado2"]
+		_:
+			print("Estado no válido:", estatusKR)
+			return
+	
+	# Alternar entre las opciones
+	var last_timelineKR = last_timelinesKR[estatusKR]
+	var nuevo_timelineKR = opciones[0] if last_timelineKR != opciones[0] else opciones[1]
+	
+	# Guardar el timeline actual
+	last_timelinesKR[estatusKR] = nuevo_timelineKR
+	
+	print("Timeline seleccionado: ", nuevo_timelineKR)
+	Dialogic.start(nuevo_timelineKR)
 
-	print("Timeline seleccionado: ", last_timelineRU)
-	Dialogic.start(last_timelineRU)
 
 
 #FUNCIONES DIMITRI
@@ -177,7 +201,10 @@ func _on_dimitriru_pressed() -> void:
 	Dialogic.timeline_ended.connect(terminoRuso)
 
 func terminoRuso():
+	actualizarEstatusKimKR()
+	actualizarEstatusChenCH()
 	actualizarEstatusDimitriRU()
+	actualizarEstatusEthanUS()
 	CallDimitri.hide()
 
 func actualizarEstatusDimitriRU():
@@ -226,28 +253,49 @@ func actualizarEstatusDimitriRU():
 	
 	print(estado_actual)
 
-var last_timelineRU = ""
+var last_timelinesRU = {
+	"Estado Negativo": "",
+	"Estado Positivo": "",
+	"Estado Muy Positivo": "",
+	"Estado Extremadamente Positivo": "",
+	"Estado Muy Negativo": "",
+	"Estado Extremadamente Negativo": "",
+	"Estado Bloqueado": ""
+}
 
 func escogerTimelineRuso():
 	var estatusRU = btnDimitriRU.obtener_estado()
+	var opciones = []
+	
 	match estatusRU:
 		"Estado Negativo":
-			last_timelineRU = escoger_random(["DimitriNegativo1", "DimitriNegativo2"], last_timelineRU)
+			opciones = ["DimitriNegativo1", "DimitriNegativo2"]
 		"Estado Positivo":
-			last_timelineRU = escoger_random(["DimitriPositivo1", "DimitriPositivo2"], last_timelineRU)
+			opciones = ["DimitriPositivo1", "DimitriPositivo2"]
 		"Estado Muy Positivo":
-			last_timelineRU = escoger_random(["DimitriMuyPositivo1", "DimitriMuyPositivo2"], last_timelineRU)
+			opciones = ["DimitriMuyPositivo1", "DimitriMuyPositivo2"]
 		"Estado Extremadamente Positivo":
-			last_timelineRU = escoger_random(["DimitriExtremadamentePositivo1", "DimitriExtremadamentePositivo2"], last_timelineRU)
+			opciones = ["DimitriExtremadamentePositivo1", "DimitriExtremadamentePositivo2"]
 		"Estado Muy Negativo":
-			last_timelineRU = escoger_random(["DimitriMuyNegativo1", "DimitriMuyNegativo2"], last_timelineRU)
+			opciones = ["DimitriMuyNegativo1", "DimitriMuyNegativo2"]
 		"Estado Extremadamente Negativo":
-			last_timelineRU = escoger_random(["DimitriExtremadamenteNegativo1", "DimitriExtremadamenteNegativo2"], last_timelineRU)
+			opciones = ["DimitriExtremadamenteNegativo1", "DimitriExtremadamenteNegativo2"]
 		"Estado Bloqueado":
-			last_timelineRU = escoger_random(["DimitriBloqueado1", "DimitriBloqueado2"], last_timelineRU)
+			opciones = ["DimitriBloqueado1", "DimitriBloqueado2"]
+		_:
+			print("Estado no válido:", estatusRU)
+			return
+	
+	# Alternar entre las opciones
+	var last_timelineRU = last_timelinesRU[estatusRU]
+	var nuevo_timelineRU = opciones[0] if last_timelineRU != opciones[0] else opciones[1]
+	
+	# Guardar el timeline actual
+	last_timelinesRU[estatusRU] = nuevo_timelineRU
+	
+	print("Timeline seleccionado: ", nuevo_timelineRU)
+	Dialogic.start(nuevo_timelineRU)
 
-	print("Timeline seleccionado: ", last_timelineRU)
-	Dialogic.start(last_timelineRU)
 
 
 #FUNCIONES ETHAN
@@ -261,6 +309,9 @@ func _on_ethanus_pressed() -> void:
 	Dialogic.timeline_ended.connect(terminoGringo)
 
 func terminoGringo():
+	actualizarEstatusKimKR()
+	actualizarEstatusChenCH()
+	actualizarEstatusDimitriRU()
 	actualizarEstatusEthanUS()
 	CallEthan.hide()
 
@@ -310,28 +361,49 @@ func actualizarEstatusEthanUS():
 	
 	print(estado_actual)
 
-var last_timelineUS = ""
+var last_timelinesUS = {
+	"Estado Negativo": "",
+	"Estado Positivo": "",
+	"Estado Muy Positivo": "",
+	"Estado Extremadamente Positivo": "",
+	"Estado Muy Negativo": "",
+	"Estado Extremadamente Negativo": "",
+	"Estado Bloqueado": ""
+}
 
 func escogerTimelineGringo():
 	var estatusUS = btnEthanUS.obtener_estado()
+	var opciones = []
+	
 	match estatusUS:
 		"Estado Negativo":
-			last_timelineUS = escoger_random(["EthanNegativo1", "EthanNegativo2"], last_timelineUS)
+			opciones = ["EthanNegativo1", "EthanNegativo2"]
 		"Estado Positivo":
-			last_timelineUS = escoger_random(["EthanPositivo1", "EthanPositivo2"], last_timelineUS)
+			opciones = ["EthanPositivo1", "EthanPositivo2"]
 		"Estado Muy Positivo":
-			last_timelineUS = escoger_random(["EthanMuyPositivo1", "EthanMuyPositivo2"], last_timelineUS)
+			opciones = ["EthanMuyPositivo1", "EthanMuyPositivo2"]
 		"Estado Extremadamente Positivo":
-			last_timelineUS = escoger_random(["EthanExtremadamentePositivo1", "EthanExtremadamentePositivo2"], last_timelineUS)
+			opciones = ["EthanExtremadamentePositivo1", "EthanExtremadamentePositivo2"]
 		"Estado Muy Negativo":
-			last_timelineUS = escoger_random(["EthanMuyNegativo1", "EthanMuyNegativo2"], last_timelineUS)
+			opciones = ["EthanMuyNegativo1", "EthanMuyNegativo2"]
 		"Estado Extremadamente Negativo":
-			last_timelineUS = escoger_random(["EthanExtremadamenteNegativo1", "EthanExtremadamenteNegativo2"], last_timelineUS)
+			opciones = ["EthanExtremadamenteNegativo1", "EthanExtremadamenteNegativo2"]
 		"Estado Bloqueado":
-			last_timelineUS = escoger_random(["EthanBloqueado1", "EthanBloqueado2"], last_timelineUS)
+			opciones = ["EthanBloqueado1", "EthanBloqueado2"]
+		_:
+			print("Estado no válido:", estatusUS)
+			return
+	
+	# Alternar entre las opciones
+	var last_timelineUS = last_timelinesUS[estatusUS]
+	var nuevo_timelineUS = opciones[0] if last_timelineUS != opciones[0] else opciones[1]
+	
+	# Guardar el timeline actual
+	last_timelinesUS[estatusUS] = nuevo_timelineUS
+	
+	print("Timeline seleccionado: ", nuevo_timelineUS)
+	Dialogic.start(nuevo_timelineUS)
 
-	print("Timeline seleccionado: ", last_timelineUS)
-	Dialogic.start(last_timelineUS)
 #AQUI TERMINA FUNCIONES ETHAN
 
 #FUNCIONES CHEN 
@@ -347,7 +419,10 @@ func _on_chench_pressed() -> void:
 
 
 func terminoChino():
+	actualizarEstatusKimKR()
 	actualizarEstatusChenCH()
+	actualizarEstatusDimitriRU()
+	actualizarEstatusEthanUS()
 	CallChen.hide()
 #
 func actualizarEstatusChenCH():
@@ -396,28 +471,49 @@ func actualizarEstatusChenCH():
 	
 	print(estado_actual)
 
-var last_timelineCH = ""
+var last_timelinesCH = {
+	"Estado Negativo": "",
+	"Estado Positivo": "",
+	"Estado Muy Positivo": "",
+	"Estado Extremadamente Positivo": "",
+	"Estado Muy Negativo": "",
+	"Estado Extremadamente Negativo": "",
+	"Estado Bloqueado": ""
+}
 
 func escogerTimelineChino():
 	var estatusCH = btnChenCH.obtener_estado()
+	var opciones = []
+	
 	match estatusCH:
 		"Estado Negativo":
-			last_timelineCH = escoger_random(["ChenNegativo1", "ChenNegativo2"], last_timelineCH)
+			opciones = ["ChenNegativo1", "ChenNegativo2"]
 		"Estado Positivo":
-			last_timelineCH = escoger_random(["ChenPositivo1", "ChenPositivo2"], last_timelineCH)
+			opciones = ["ChenPositivo1", "ChenPositivo2"]
 		"Estado Muy Positivo":
-			last_timelineCH = escoger_random(["ChenMuyPositivo1", "ChenMuyPositivo2"], last_timelineCH)
+			opciones = ["ChenMuyPositivo1", "ChenMuyPositivo2"]
 		"Estado Extremadamente Positivo":
-			last_timelineCH = escoger_random(["ChenExtremadamentePositivo1", "ChenExtremadamentePositivo2"], last_timelineCH)
+			opciones = ["ChenExtremadamentePositivo1", "ChenExtremadamentePositivo2"]
 		"Estado Muy Negativo":
-			last_timelineCH = escoger_random(["ChenMuyNegativo1", "ChenMuyNegativo2"], last_timelineCH)
+			opciones = ["ChenMuyNegativo1", "ChenMuyNegativo2"]
 		"Estado Extremadamente Negativo":
-			last_timelineCH = escoger_random(["ChenExtremadamenteNegativo1", "ChenExtremadamenteNegativo2"], last_timelineCH)
+			opciones = ["ChenExtremadamenteNegativo1", "ChenExtremadamenteNegativo2"]
 		"Estado Bloqueado":
-			last_timelineCH = escoger_random(["ChenBloqueado1", "ChenBloqueado2"], last_timelineCH)
+			opciones = ["ChenBloqueado1", "ChenBloqueado2"]
+		_:
+			print("Estado no válido:", estatusCH)
+			return
+	
+	# Alternar entre las opciones
+	var last_timelineCH = last_timelinesCH[estatusCH]
+	var nuevo_timelineCH = opciones[0] if last_timelineCH != opciones[0] else opciones[1]
+	
+	# Guardar el timeline actual
+	last_timelinesCH[estatusCH] = nuevo_timelineCH
+	
+	print("Timeline seleccionado: ", nuevo_timelineCH)
+	Dialogic.start(nuevo_timelineCH)
 
-	print("Timeline seleccionado: ", last_timelineCH)
-	Dialogic.start(last_timelineCH)
 	
 #AQUI TERMINA FUNCIONES CHEN
 	
