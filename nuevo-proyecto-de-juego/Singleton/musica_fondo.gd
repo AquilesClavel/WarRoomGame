@@ -4,6 +4,9 @@ var Malo = load("res://Assets/Finales/Adagio.mp3")
 var Bueno = load("res://Assets/Finales/FinalBueno.mp3")
 var Neutral = load("res://Assets/Finales/Clair de Lune (Studio Version) [ ezmp3.cc ].mp3")
 var Menu = load("res://Assets/MusicaFondo.mp3")
+var primeraVez = false
+
+
 func cambiarFondo(fondo:String = "Reset")->void:
 	match fondo:
 		"Malo":

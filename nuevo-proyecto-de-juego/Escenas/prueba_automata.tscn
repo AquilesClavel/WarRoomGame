@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://ba0it1i70j3fx"]
+[gd_scene load_steps=10 format=3 uid="uid://bc6y116fby32m"]
 
 [ext_resource type="Script" path="res://Scripts/PruebaAutomata/lider_1.gd" id="1_5g4j5"]
 [ext_resource type="Script" path="res://Scripts/PruebaAutomata/Automata.gd" id="1_b85g5"]

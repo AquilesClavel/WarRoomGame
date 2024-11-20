@@ -39,10 +39,21 @@ extends Control
 @onready var btnAyudaCom =$ColorRect/btnAyudaComputadora
 var primeraVez = MusicaFondo.primeraVez
 
+#Estados automata
+enum Estado {CONF,INICIO,POSITIVO,NEUTRAL,NEGATIVO,VICTORIA,DERROTA}
+var estado_actual: Estado = Estado.CONF
+var palabra: Array = []
+
+#Pila  
+var pila :Array = []
+
 func _ready() -> void:
+	hide()
 	if primeraVez == false:
 		Dialogic.start("AyudaComputadora")
 	MusicaFondo.primeraVez = true
+	manejar_victoria(" ")
+	manejar_victoria("2")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -67,15 +78,14 @@ func _on_btn_regresar_pressed() -> void:
 func _on_chench_pressed() -> void:
 	CallChen.show()
 	Dialogic.start("ChenIntroduccion")
-	CallChen.hide()
 	Dialogic.timeline_ended.connect(terminoChino)
 	
 
 func terminoChino():
 	actualizarEstatusChenCH()
+	CallChen.hide()
 
 func actualizarEstatusChenCH():
- 
 	var estatus = btnChenCH.obtener_estado()
 	
 	match estatus:
@@ -91,3 +101,92 @@ func actualizarEstatusChenCH():
 			caratristeChen.hide()
 			plusChen.set_self_modulate("ffffff1f")
 			plusplusChen.set_self_modulate("ffffff1f")
+
+			
+	
+	print(estado_actual)
+
+
+
+func manejar_victoria(decision:String)->void:
+	match estado_actual:
+		Estado.CONF:
+			match decision:
+				" ":
+					palabra.append(decision)
+					pila.push_front("#")
+					estado_actual = Estado.INICIO
+		Estado.INICIO:
+			match decision:
+				"1":
+					palabra.append(decision)
+					pila.push_front("P")
+					estado_actual = Estado.POSITIVO
+				"2":
+					palabra.append(decision)
+					pila.push_front("N")
+					estado_actual = Estado.NEGATIVO
+		Estado.POSITIVO:
+			match decision:
+				"1":
+					palabra.append(decision)
+					pila.push_front("P")
+				"2" when pila[0] == "P":
+					palabra.append(decision)
+					pila.pop_front()
+				"2" when pila[0] == "#":
+					palabra.append(decision)
+					pila.pop_front()
+					pila.push_front("#")
+					pila.push_front("N")
+					estado_actual = Estado.NEGATIVO
+				" " when pila[0] == "P":
+					palabra.append(decision)
+					pila.pop_front()
+					estado_actual =Estado.VICTORIA
+					print("FINAL VICTORIA")
+					MusicaFondo.cambiarFondo("Bueno")
+					Transicion.transition()
+					await Transicion.on_transition_finished
+					get_tree().change_scene_to_file("res://Escenas/final_bueno.tscn")
+				" " when pila[0] == "#":
+					palabra.append(decision)
+					pila.pop_front()
+					estado_actual =Estado.NEUTRAL
+					print("FINAL NEUTRAL")
+					MusicaFondo.cambiarFondo("Neutral")
+					Transicion.transition()
+					await Transicion.on_transition_finished
+					get_tree().change_scene_to_file("res://Escenas/final_neutral.tscn")
+		Estado.NEGATIVO:
+			match decision:
+				"2":
+					palabra.append(decision)
+					pila.push_front("N")
+				"1" when pila[0] == "N":
+					palabra.append(decision)
+					pila.pop_front()
+				"1" when pila[0] == "#":
+					palabra.append(decision)
+					pila.pop_front()
+					pila.push_front("#")
+					pila.push_front("P")
+					estado_actual = Estado.POSITIVO
+				" " when pila[0] == "N":
+					palabra.append(decision)
+					pila.pop_front()
+					estado_actual =Estado.DERROTA
+					print("FINAL DERROTA")
+					MusicaFondo.cambiarFondo("Malo")
+					Transicion.transition()
+					await Transicion.on_transition_finished
+					get_tree().change_scene_to_file("res://Escenas/final_malo.tscn")
+				" " when pila[0] == "#":
+					palabra.append(decision)
+					pila.pop_front()
+					estado_actual =Estado.NEUTRAL
+					print("FINAL NEUTRAL")
+					MusicaFondo.cambiarFondo("Neutral")
+					Transicion.transition()
+					await Transicion.on_transition_finished
+					get_tree().change_scene_to_file("res://Escenas/final_neutral.tscn")

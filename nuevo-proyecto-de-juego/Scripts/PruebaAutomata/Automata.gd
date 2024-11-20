@@ -29,41 +29,41 @@ var Context = 0
 func _ready() -> void:
 	manejar_victoria(" ")
 
-func passAutomata(decision:String)->void:
-	match Context:
-		1:
-			match decision:
-				"1":
-					Lider1.manejar_deciciones("0")
-				"2":
-					Lider1.manejar_deciciones("1")
-				"3":
-					Lider1.manejar_deciciones("2")
-		2:
-			match decision:
-				"1":
-					Lider2.manejar_deciciones("0")
-				"2":
-					Lider2.manejar_deciciones("1")
-				"3":
-					Lider2.manejar_deciciones("2")
-		3:
-			match decision:
-				"1":
-					Lider3.manejar_deciciones("0")
-				"2":
-					Lider3.manejar_deciciones("1")
-				"3":
-					Lider3.manejar_deciciones("2")
-		4:
-			match decision:
-				"1":
-					Lider4.manejar_deciciones("0")
-				"2":
-					Lider4.manejar_deciciones("1")
-				"3":
-					Lider4.manejar_deciciones("2")
-	
+#func passAutomata(decision:String)->void:
+	#match Context:
+		#1:
+			#match decision:
+				#"1":
+					#Lider1.manejar_deciciones("0")
+				#"2":
+					#Lider1.manejar_deciciones("1")
+				#"3":
+					#Lider1.manejar_deciciones("2")
+		#2:
+			#match decision:
+				#"1":
+					#Lider2.manejar_deciciones("0")
+				#"2":
+					#Lider2.manejar_deciciones("1")
+				#"3":
+					#Lider2.manejar_deciciones("2")
+		#3:
+			#match decision:
+				#"1":
+					#Lider3.manejar_deciciones("0")
+				#"2":
+					#Lider3.manejar_deciciones("1")
+				#"3":
+					#Lider3.manejar_deciciones("2")
+		#4:
+			#match decision:
+				#"1":
+					#Lider4.manejar_deciciones("0")
+				#"2":
+					#Lider4.manejar_deciciones("1")
+				#"3":
+					#Lider4.manejar_deciciones("2")
+	#
 
 
 func manejar_victoria(decision:String)->void:
@@ -150,39 +150,39 @@ func manejar_victoria(decision:String)->void:
 					get_tree().change_scene_to_file("res://Escenas/final_neutral.tscn")
 					
 					
-func _on_button_1_pressed() -> void:
-	passAutomata("1")
-	manejar_victoria("1")
-
-
-func _on_button_2_pressed() -> void:
-	passAutomata("2")
-	manejar_victoria("2")
-
-
-func _on_button_3_pressed() -> void:
-	passAutomata("3")
-
-
-func _on_l_1_pressed() -> void:
-	Context = 1
-	print("L1 SELECT")
-
-
-func _on_l_2_pressed() -> void:
-	Context = 2
-	print("L2 SELECT")
-
-
-func _on_l_3_pressed() -> void:
-	Context = 3
-	print("L3 SELECT")
-
-
-func _on_l_4_pressed() -> void:
-	Context = 4
-	print("L4 SELECT")
-
-
-func _on_button_4_pressed() -> void:
-	manejar_victoria(" ")
+#func _on_button_1_pressed() -> void:
+	#passAutomata("1")
+	#manejar_victoria("1")
+#
+#
+#func _on_button_2_pressed() -> void:
+	#passAutomata("2")
+	#manejar_victoria("2")
+#
+#
+#func _on_button_3_pressed() -> void:
+	#passAutomata("3")
+#
+#
+#func _on_l_1_pressed() -> void:
+	#Context = 1
+	#print("L1 SELECT")
+#
+#
+#func _on_l_2_pressed() -> void:
+	#Context = 2
+	#print("L2 SELECT")
+#
+#
+#func _on_l_3_pressed() -> void:
+	#Context = 3
+	#print("L3 SELECT")
+#
+#
+#func _on_l_4_pressed() -> void:
+	#Context = 4
+	#print("L4 SELECT")
+#
+#
+#func _on_button_4_pressed() -> void:
+	#manejar_victoria(" ")

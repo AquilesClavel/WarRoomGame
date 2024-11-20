@@ -1,5 +1,7 @@
 extends Node
 
+@onready var Computadora = get_node("/root/Control")
+
 #Estados del Automata
 enum Estados {
 	Inicial,
@@ -114,10 +116,12 @@ func _ready() -> void:
 func Evento(decision:String):
 	if decision == "negativaChenCH":
 		transcionar("M")
+		Computadora.manejar_victoria("2")
 		print("negatvo")
 	
 	if decision == "positivaChenCH":
 		transcionar("B")
+		Computadora.manejar_victoria("1")
 		print("positivo")
 	
 

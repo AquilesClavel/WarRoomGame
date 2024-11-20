@@ -16,4 +16,3 @@ func _on_btn_jugar_pressed() -> void:
 	result=get_tree().change_scene_to_file("res://Escenas/lideres.tscn")
 	print(result)
 	Dialogic.start("Introduccion")
-	
