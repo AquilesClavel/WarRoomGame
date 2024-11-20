@@ -1,0 +1,11 @@
+[style name="Style llamada"]
+join "Chen Zhenhua" leftmost
+"Chen Zhenhua": Durante décadas, hemos trabajado para fortalecer nuestra posición en el mundo, pero siempre hay quienes intentan detenernos. ¿Qué opinas de quienes intentan limitar el crecimiento de una nación?
+- A veces, la oposición surge del miedo a perder el control.
+	[signal arg="positivaChenCH"]
+	[signal arg="positivaEthanUS"]
+	"Chen Zhenhua": El miedo es una herramienta poderosa, aunque no todos saben usarla correctamente.
+- Quizás buscan equilibrar lo que consideran un peligro.
+	[signal arg="negativaChenCH"]
+	[signal arg="negativaKimKR"]
+	"Chen Zhenhua": Interesante...

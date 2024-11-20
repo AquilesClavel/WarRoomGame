@@ -1,0 +1,9 @@
+[style name="Style llamada"]
+join "Chen Zhenhua" center
+"Chen Zhenhua": A pesar de nuestras diferencias, siempre hay oportunidades para trabajar juntos. Pero dime, ¿crees que las diferencias culturales son un obstáculo o una fortaleza en las negociaciones?
+- Depende del contexto. A veces pueden ser una ventaja, otras veces, un obstáculo.
+	[signal arg="positivaChenCH"]
+	"Chen Zhenhua": El contexto lo es todo
+- Las diferencias bien manejadas son una fortaleza
+	[signal arg="negativaChenCH"]
+	"Chen Zhenhua": La diversidad de pensamiento puede ser valiosa

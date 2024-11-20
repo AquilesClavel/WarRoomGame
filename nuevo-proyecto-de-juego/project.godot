@@ -37,6 +37,10 @@ directories/dtl_directory={
 "AyudaComputadora": "res://Timelines/AyudaComputadora.dtl",
 "AyudaGobernantes1": "res://Timelines/AyudaGobernantes1.dtl",
 "ChenIntroduccion": "res://Timelines/ChenIntroduccion.dtl",
+"ChenNegativo1": "res://Timelines/TimelinesChino/ChenNegativo1.dtl",
+"ChenNegativo2": "res://Timelines/TimelinesChino/ChenNegativo2.dtl",
+"ChenPositivo1": "res://Timelines/TimelinesChino/ChenPositivo1.dtl",
+"ChenPositivo2": "res://Timelines/TimelinesChino/ChenPositivo2.dtl",
 "Introduccion": "res://Timelines/Introduccion.dtl",
 "timeline": "res://Timelines/timeline.dtl"
 }
