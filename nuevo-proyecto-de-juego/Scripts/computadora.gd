@@ -87,6 +87,7 @@ func _on_kimkr_pressed() -> void:
 	CallKim.show()
 	if primeraKR == false:
 		Dialogic.start("KimIntroduccion")
+		primeraKR = true
 	else:
 		escogerTimelineCoreano()
 	Dialogic.timeline_ended.connect(terminoCoreano)
@@ -170,6 +171,7 @@ func _on_dimitriru_pressed() -> void:
 	CallDimitri.show()
 	if primeraRU == false:
 		Dialogic.start("DimitriIntroduccion")
+		primeraRU = true
 	else:
 		escogerTimelineRuso()
 	Dialogic.timeline_ended.connect(terminoRuso)
@@ -253,6 +255,7 @@ func _on_ethanus_pressed() -> void:
 	CallChen.show()
 	if primeraUS == false:
 		Dialogic.start("EthanIntroduccion")
+		primeraUS = true
 	else:
 		escogerTimelineGringo()
 	Dialogic.timeline_ended.connect(terminoGringo)
@@ -336,6 +339,7 @@ func _on_chench_pressed() -> void:
 	CallChen.show()
 	if primeraCH == false:
 		Dialogic.start("ChenIntroduccion")
+		primeraCH = true
 	else:
 		escogerTimelineChino()
 	Dialogic.timeline_ended.connect(terminoChino)

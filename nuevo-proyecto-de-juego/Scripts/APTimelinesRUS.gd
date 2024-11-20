@@ -1,4 +1,5 @@
 extends Node
+@onready var Computadora = get_node("/root/Lideres/Computadora")
 
 #Estados del Automata
 enum Estados {
@@ -108,6 +109,20 @@ func obtener_estado():
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	transcionar("M")
+	Dialogic.signal_event.connect(Evento)
+	
+
+func Evento(decision:String):
+	if decision == "negativaDimitriRU":
+		transcionar("M")
+		Computadora.manejar_victoria("2")
+		print("negatvo")
+	
+	if decision == "positivaDimitriRU":
+		transcionar("B")
+		Computadora.manejar_victoria("1")
+		print("positivo")
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
