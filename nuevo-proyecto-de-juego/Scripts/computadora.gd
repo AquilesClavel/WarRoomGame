@@ -34,6 +34,10 @@ extends Control
 @onready var CallDimitri = $ColorRect/LlamandoDimitri
 @onready var CallChen = $ColorRect/LlamandoChen
 
+@onready var btnRegresar = $ColorRect/btnRegresar
+@onready var btnAyudaGob = $ColorRect/btnAyudaGobernantes
+@onready var btnAyudaCom =$ColorRect/btnAyudaComputadora
+
 func _ready() -> void:
 	pass # Replace with function body.
 
@@ -41,3 +45,15 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+
+func _on_btn_ayuda_computadora_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_btn_ayuda_gobernantes_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_btn_regresar_pressed() -> void:
+	pass # Replace with function body.
