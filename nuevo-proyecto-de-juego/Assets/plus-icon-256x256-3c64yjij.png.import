@@ -2,30 +2,30 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brawjk30gwb61"
-path="res://.godot/imported/ChenFinal.png-487be54d1723d22030b39c9834eaca41.ctex"
+uid="uid://qp0h5cxjeej8"
+path="res://.godot/imported/plus-icon-256x256-3c64yjij.png-8fce5042188a364952298820273d31b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Personajes/Chen CH/ChenFinal.png"
-dest_files=["res://.godot/imported/ChenFinal.png-487be54d1723d22030b39c9834eaca41.ctex"]
+source_file="res://Assets/plus-icon-256x256-3c64yjij.png"
+dest_files=["res://.godot/imported/plus-icon-256x256-3c64yjij.png-8fce5042188a364952298820273d31b2.ctex"]
 
 [params]
 
 compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
-compress/hdr_compression=0
+compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
-process/fix_alpha_border=false
+process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false

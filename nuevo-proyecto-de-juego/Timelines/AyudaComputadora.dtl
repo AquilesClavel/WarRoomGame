@@ -1,0 +1,11 @@
+join "Diego Reinhardt" leftmost
+"Diego Reinhardt": Ahora que has hecho clic, te explicaré cómo funciona esto, {nombreJugador}. Esta computadora es tu centro de comando.
+"Diego Reinhardt": En la pantalla principal, verás cuatro fotos, cada una representando a uno de los líderes mundiales. Si presionas una foto, iniciarás una conversación directa con ese líder.
+"Diego Reinhardt": Al lado de cada foto está su estatus actual, algo que deberás monitorear cuidadosamente.
+"Diego Reinhardt": En el lado derecho de la pantalla, tienes el estatus general de la reunión. Este indicador te dará una idea de cómo va todo el panorama.
+"Diego Reinhardt": Abajo, encontrarás tres botones\:
+"Diego Reinhardt": Regresar, por si necesitas salir de la computadora.
+"Diego Reinhardt": Ayuda Gobernantes, para recibir una explicacion de ellos.
+"Diego Reinhardt": Ayuda Computadora, para escuchar nuevamente estas instrucciones.
+"Diego Reinhardt": Tómate tu tiempo para familiarizarte, pero no te tardes demasiado... cada segundo cuenta.
+leave "Diego Reinhardt"

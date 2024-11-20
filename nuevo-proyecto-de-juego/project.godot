@@ -33,6 +33,7 @@ directories/dch_directory={
 "Protagonista": "res://Assets/Personajes/Protagonista/Protagonista.dch"
 }
 directories/dtl_directory={
+"AyudaComputadora": "res://Timelines/AyudaComputadora.dtl",
 "Introduccion": "res://Timelines/Introduccion.dtl",
 "timeline": "res://Timelines/timeline.dtl"
 }
