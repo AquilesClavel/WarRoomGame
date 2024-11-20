@@ -1,0 +1,7 @@
+[style name="Style llamada"]
+join "Chen Zhenhua" leftmost
+"Chen Zhenhua": Negativo 1
+- Positivo
+	[signal arg="positivaChenCH"]
+- Negativo
+	[signal arg="negativaChenCH"]
