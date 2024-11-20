@@ -3,7 +3,7 @@ extends Control
 @onready var btnChenCH = $ColorRect/CHENCH
 @onready var btnEthanUS = $ColorRect/ETHANUS
 @onready var btnKimKR = $ColorRect/KIMKR
-@onready var DimitriRU = $ColorRect/DIMITRIRU
+@onready var btnDimitriRU = $ColorRect/DIMITRIRU
 
 @onready var caraneutraChen = $ColorRect/EstatusChen/ColorRect/caraneutra
 @onready var caratristeChen =$ColorRect/EstatusChen/ColorRect/caratriste
@@ -81,7 +81,173 @@ func _on_btn_regresar_pressed() -> void:
 	hide()
 	lideres.CamaraCompu.set_enabled(false)
 	lideres.CamaraGeneral.set_enabled(true)
+
+#FUNCIONES KIM
+func _on_kimkr_pressed() -> void:
+	CallKim.show()
+	if primeraKR == false:
+		Dialogic.start("KimIntroduccion")
+	else:
+		escogerTimelineCoreano()
+	Dialogic.timeline_ended.connect(terminoCoreano)
+
+func terminoCoreano():
+	actualizarEstatusKimKR()
+	CallKim.hide()
+
+func actualizarEstatusKimKR():
+	var estatusKR = btnKimKR.obtener_estado()
+
+	match estatusKR:
+		"Estado Negativo":
+			print("estado negativo chino")
+			carafelizKim.hide()
+			caratristeKim.show()
+			plusKim.set_self_modulate("ffffff1f")
+			plusplusKim.set_self_modulate("ffffff1f")
+		"Estado Positivo":
+			print("estado !negativo chino")
+			carafelizKim.show()
+			caratristeKim.hide()
+			plusKim.set_self_modulate("ffffff1f")
+			plusplusKim.set_self_modulate("ffffff1f")
+		"Estado Muy Positivo":
+			carafelizKim.show()
+			caratristeKim.hide()
+			plusKim.set_self_modulate("ffffff")
+			plusplusKim.set_self_modulate("ffffff1f")
+		"Estado Extremadamente Positivo":
+			carafelizKim.show()
+			caratristeKim.hide()
+			plusKim.set_self_modulate("ffffff")
+			plusplusKim.set_self_modulate("ffffff")
+		"Estado Muy Negativo":
+			carafelizKim.hide()
+			caratristeKim.show()
+			plusKim.set_self_modulate("ffffff")
+			plusplusKim.set_self_modulate("ffffff1f")
+		"Estado Extremadamente Negativo":
+			carafelizKim.hide()
+			caratristeKim.show()
+			plusKim.set_self_modulate("ffffff")
+			plusplusKim.set_self_modulate("ffffff")
+		"Estado Bloqueado":
+			carafelizKim.hide()
+			caratristeKim.hide()
+			caraneutraKim.show()
+			plusKim.set_self_modulate("ffffff1f")
+			plusplusKim.set_self_modulate("ffffff1f")
+			
 	
+	print(estado_actual)
+
+var last_timelineKR = ""
+
+func escogerTimelineCoreano():
+	var estatusKR = btnKimKR.obtener_estado()
+	match estatusKR:
+		"Estado Negativo":
+			last_timelineKR = escoger_random(["KimNegativo1", "KimNegativo2"], last_timelineKR)
+		"Estado Positivo":
+			last_timelineKR = escoger_random(["KimPositivo1", "KimPositivo2"], last_timelineKR)
+		"Estado Muy Positivo":
+			last_timelineKR = escoger_random(["KimMuyPositivo1", "KimMuyPositivo2"], last_timelineKR)
+		"Estado Extremadamente Positivo":
+			last_timelineKR = escoger_random(["KimExtremadamentePositivo1", "KimExtremadamentePositivo2"], last_timelineKR)
+		"Estado Muy Negativo":
+			last_timelineKR = escoger_random(["KimMuyNegativo1", "KimMuyNegativo2"], last_timelineKR)
+		"Estado Extremadamente Negativo":
+			last_timelineKR = escoger_random(["KimExtremadamenteNegativo1", "KimExtremadamenteNegativo2"], last_timelineKR)
+		"Estado Bloqueado":
+			last_timelineKR = escoger_random(["KimBloqueado1", "KimBloqueado2"], last_timelineKR)
+
+	print("Timeline seleccionado: ", last_timelineRU)
+	Dialogic.start(last_timelineRU)
+
+
+#FUNCIONES DIMITRI
+func _on_dimitriru_pressed() -> void:
+	CallDimitri.show()
+	if primeraRU == false:
+		Dialogic.start("DimitriIntroduccion")
+	else:
+		escogerTimelineRuso()
+	Dialogic.timeline_ended.connect(terminoRuso)
+
+func terminoRuso():
+	actualizarEstatusDimitriRU()
+	CallDimitri.hide()
+
+func actualizarEstatusDimitriRU():
+	var estatusRU = btnDimitriRU.obtener_estado()
+
+	match estatusRU:
+		"Estado Negativo":
+			print("estado negativo chino")
+			carafelizDimitri.hide()
+			caratristeDimitri.show()
+			plusDimitri.set_self_modulate("ffffff1f")
+			plusplusDimitri.set_self_modulate("ffffff1f")
+		"Estado Positivo":
+			print("estado !negativo chino")
+			carafelizDimitri.show()
+			caratristeDimitri.hide()
+			plusDimitri.set_self_modulate("ffffff1f")
+			plusplusDimitri.set_self_modulate("ffffff1f")
+		"Estado Muy Positivo":
+			carafelizDimitri.show()
+			caratristeDimitri.hide()
+			plusDimitri.set_self_modulate("ffffff")
+			plusplusDimitri.set_self_modulate("ffffff1f")
+		"Estado Extremadamente Positivo":
+			carafelizDimitri.show()
+			caratristeDimitri.hide()
+			plusDimitri.set_self_modulate("ffffff")
+			plusplusDimitri.set_self_modulate("ffffff")
+		"Estado Muy Negativo":
+			carafelizDimitri.hide()
+			caratristeDimitri.show()
+			plusDimitri.set_self_modulate("ffffff")
+			plusplusDimitri.set_self_modulate("ffffff1f")
+		"Estado Extremadamente Negativo":
+			carafelizDimitri.hide()
+			caratristeDimitri.show()
+			plusDimitri.set_self_modulate("ffffff")
+			plusplusDimitri.set_self_modulate("ffffff")
+		"Estado Bloqueado":
+			carafelizDimitri.hide()
+			caratristeDimitri.hide()
+			caraneutraDimitri.show()
+			plusDimitri.set_self_modulate("ffffff1f")
+			plusplusDimitri.set_self_modulate("ffffff1f")
+			
+	
+	print(estado_actual)
+
+var last_timelineRU = ""
+
+func escogerTimelineRuso():
+	var estatusRU = btnDimitriRU.obtener_estado()
+	match estatusRU:
+		"Estado Negativo":
+			last_timelineRU = escoger_random(["DimitriNegativo1", "DimitriNegativo2"], last_timelineRU)
+		"Estado Positivo":
+			last_timelineRU = escoger_random(["DimitriPositivo1", "DimitriPositivo2"], last_timelineRU)
+		"Estado Muy Positivo":
+			last_timelineRU = escoger_random(["DimitriMuyPositivo1", "DimitriMuyPositivo2"], last_timelineRU)
+		"Estado Extremadamente Positivo":
+			last_timelineRU = escoger_random(["DimitriExtremadamentePositivo1", "DimitriExtremadamentePositivo2"], last_timelineRU)
+		"Estado Muy Negativo":
+			last_timelineRU = escoger_random(["DimitriMuyNegativo1", "DimitriMuyNegativo2"], last_timelineRU)
+		"Estado Extremadamente Negativo":
+			last_timelineRU = escoger_random(["DimitriExtremadamenteNegativo1", "DimitriExtremadamenteNegativo2"], last_timelineRU)
+		"Estado Bloqueado":
+			last_timelineRU = escoger_random(["DimitriBloqueado1", "DimitriBloqueado2"], last_timelineRU)
+
+	print("Timeline seleccionado: ", last_timelineRU)
+	Dialogic.start(last_timelineRU)
+
+
 #FUNCIONES ETHAN
 func _on_ethanus_pressed() -> void:
 	CallChen.show()
