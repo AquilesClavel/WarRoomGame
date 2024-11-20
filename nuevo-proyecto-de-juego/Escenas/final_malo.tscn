@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://dch622dhrh7h7"]
+
+[ext_resource type="Script" path="res://Escenas/final_malo.gd" id="1_ke7tm"]
+[ext_resource type="VideoStream" path="res://Assets/Finales/final-malo.ogv" id="1_kj7v8"]
+
+[node name="FinalMalo" type="Node2D"]
+position = Vector2(0, -1)
+script = ExtResource("1_ke7tm")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_left = -252.0
+offset_top = -78.0
+offset_right = 1323.0
+offset_bottom = 765.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Control"]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 653.0
+stream = ExtResource("1_kj7v8")
+autoplay = true
+expand = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 964.0
+offset_top = 550.0
+offset_right = 1128.0
+offset_bottom = 620.0
+text = "MENU"
+
+[connection signal="finished" from="Control/VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]
+[connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]
