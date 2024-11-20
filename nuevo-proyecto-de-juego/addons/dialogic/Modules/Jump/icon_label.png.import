@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpfd2fy4ndgy8"
-path="res://.godot/imported/cf0e1ffd-f02a-4f10-8d42-508f8a15fa65_1900x809.jpg-27cb25bb7e09cce9c4224308d5efdc72.ctex"
+uid="uid://c53yjrxmhmgh"
+path="res://.godot/imported/icon_label.png-3923bd1131990c8869923c838ffdb9ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Escenas/cf0e1ffd-f02a-4f10-8d42-508f8a15fa65_1900x809.jpg"
-dest_files=["res://.godot/imported/cf0e1ffd-f02a-4f10-8d42-508f8a15fa65_1900x809.jpg-27cb25bb7e09cce9c4224308d5efdc72.ctex"]
+source_file="res://addons/dialogic/Modules/Jump/icon_label.png"
+dest_files=["res://.godot/imported/icon_label.png-3923bd1131990c8869923c838ffdb9ae.ctex"]
 
 [params]
 

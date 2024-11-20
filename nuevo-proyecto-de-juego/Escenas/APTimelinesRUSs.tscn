@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxwkhgsh2avvq"]
+
+[ext_resource type="Script" path="res://Scripts/APTimelinesRUS.gd" id="1_n21af"]
+
+[node name="APTimelinesRUS" type="Node"]
+script = ExtResource("1_n21af")
