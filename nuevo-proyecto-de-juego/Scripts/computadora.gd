@@ -37,9 +37,12 @@ extends Control
 @onready var btnRegresar = $ColorRect/btnRegresar
 @onready var btnAyudaGob = $ColorRect/btnAyudaGobernantes
 @onready var btnAyudaCom =$ColorRect/btnAyudaComputadora
+var primeraVez = MusicaFondo.primeraVez
 
 func _ready() -> void:
-	pass # Replace with function body.
+	if primeraVez == false:
+		Dialogic.start("AyudaComputadora")
+	MusicaFondo.primeraVez = true
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -48,12 +51,43 @@ func _process(delta: float) -> void:
 
 
 func _on_btn_ayuda_computadora_pressed() -> void:
-	pass # Replace with function body.
+	Dialogic.start("AyudaComputadora")
 
 
 func _on_btn_ayuda_gobernantes_pressed() -> void:
-	pass # Replace with function body.
+	Dialogic.start("AyudaGobernantes1")
 
 
 func _on_btn_regresar_pressed() -> void:
-	pass # Replace with function body.
+	var result;
+	result=get_tree().change_scene_to_file("res://Escenas/lideres.tscn")
+	print(result)
+
+
+func _on_chench_pressed() -> void:
+	CallChen.show()
+	Dialogic.start("ChenIntroduccion")
+	CallChen.hide()
+	Dialogic.timeline_ended.connect(terminoChino)
+	
+
+func terminoChino():
+	actualizarEstatusChenCH()
+
+func actualizarEstatusChenCH():
+ 
+	var estatus = btnChenCH.obtener_estado()
+	
+	match estatus:
+		"Estado Negativo":
+			print("estado negativo chino")
+			carafelizChen.hide()
+			caratristeChen.show()
+			plusChen.set_self_modulate("ffffff1f")
+			plusplusChen.set_self_modulate("ffffff1f")
+		"Estado Positivo":
+			print("estado !negativo chino")
+			carafelizChen.show()
+			caratristeChen.hide()
+			plusChen.set_self_modulate("ffffff1f")
+			plusplusChen.set_self_modulate("ffffff1f")

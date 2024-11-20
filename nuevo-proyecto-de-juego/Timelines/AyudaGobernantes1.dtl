@@ -1,0 +1,8 @@
+join Hector rightmost
+Hector: Las tensiones están en su punto máximo, {nombreJugador}. Cada líder aquí enfrenta un conflicto importante, y cómo lo manejes definirá si esto termina en paz o en desastre.
+Hector: Estados Unidos está paranoico con el espionaje extranjero. Han tenido incidentes recientes y no van a tolerar que nadie se meta en su territorio.
+Hector: Rusia está empeñado en recuperar terrenos que dice que le pertenecen históricamente. Su líder cree que ceder en esto sería una derrota imperdonable.
+Hector: China, por su parte, está presionando para expandir su mercado internacional, pero también tiene reclamaciones territoriales que considera innegociables.
+Hector: Y Corea del Norte… bueno, quiere deshacerse de los vetos internacionales que los aíslan. Para ellos, eso es tanto una cuestión de orgullo como de supervivencia.
+Hector: Todos tienen sus prioridades, pero también sus límites. Aprende a leer entre líneas, a saber cuándo ceder y cuándo presionar. Si logras entender qué los mueve, tendrás una oportunidad de encontrar soluciones. Pero cuidado\: un paso en falso, y podrías empujarlos aún más hacia el conflicto.
+leave Hector

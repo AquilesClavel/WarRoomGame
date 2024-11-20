@@ -3,14 +3,10 @@ extends Node2D
 
 
 
-
+var primeraVez = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	CamaraGeneral.set_enabled(true)
-	#btnLider1.set_enabled(false)
-	#btnLider2.set_enabled(false)
-	#btnLider3.set_enabled(false)
-	#btnLider4.set_enabled(false)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

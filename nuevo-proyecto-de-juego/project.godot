@@ -34,10 +34,12 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "AyudaComputadora": "res://Timelines/AyudaComputadora.dtl",
+"AyudaGobernantes1": "res://Timelines/AyudaGobernantes1.dtl",
+"ChenIntroduccion": "res://Timelines/ChenIntroduccion.dtl",
 "Introduccion": "res://Timelines/Introduccion.dtl",
 "timeline": "res://Timelines/timeline.dtl"
 }
-layout/style_list=["res://Assets/EstilosTexto.tres"]
+layout/style_list=["res://Assets/EstilosTexto.tres", "res://Assets/Style llamada.tres"]
 layout/default_style="res://Assets/EstilosTexto.tres"
 glossary/default_case_sensitive=true
 variables={

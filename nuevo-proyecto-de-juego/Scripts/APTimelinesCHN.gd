@@ -108,6 +108,18 @@ func obtener_estado():
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	transcionar("M")
+	Dialogic.signal_event.connect(Evento)
+	
+
+func Evento(decision:String):
+	if decision == "negativaChenCH":
+		transcionar("M")
+		print("negatvo")
+	
+	if decision == "positivaChenCH":
+		transcionar("B")
+		print("positivo")
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

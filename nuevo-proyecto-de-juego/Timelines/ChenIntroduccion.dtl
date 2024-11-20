@@ -1,0 +1,11 @@
+join "Chen Zhenhua" leftmost
+"Chen Zhenhua": "你好，我们终于见面了。" (Nǐ hǎo, wǒmen zhōngyú jiànmiànle.) (La computadora activa el traductor automático tras un par de segundos).\
+Hola, finalmente nos vemos.
+"Chen Zhenhua": Sé que estás aquí para intentar resolver este caos antes de que todo se desmorone.
+"Chen Zhenhua": Pero dime, {nombreJugador}, ¿qué te hace pensar que alguien como tú puede cambiar algo que lleva años construyéndose?
+- Porque creo en las soluciones justas y en el poder del diálogo.
+	"Chen Zhenhua": Hmph. Optimismo. Útil, supongo, pero insuficiente. Si ese es tu enfoque, necesitarás algo más que palabras bonitas para convencerme.
+	[signal arg="negativaChenCH"]
+- Quizás no pueda cambiar todo, pero al menos puedo intentarlo.
+	"Chen Zhenhua": Hmm, una respuesta realista. No me gustan los soñadores que creen que pueden arreglarlo todo. Al menos sabes que este trabajo requiere esfuerzo y sacrificios. Eso ya es algo
+	[signal arg="positivaChenCH"]

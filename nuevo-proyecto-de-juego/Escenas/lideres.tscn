@@ -15,26 +15,6 @@ texture = ExtResource("2_5f0qf")
 enabled = false
 zoom = Vector2(0.606, 0.8)
 
-[node name="CamaraLider1" type="Camera2D" parent="."]
-position = Vector2(-505, 84)
-enabled = false
-zoom = Vector2(4.5, 4)
-
-[node name="CamaraLider2" type="Camera2D" parent="."]
-position = Vector2(34, 73)
-enabled = false
-zoom = Vector2(4.5, 4)
-
-[node name="CamaraLider3" type="Camera2D" parent="."]
-position = Vector2(-238, 156)
-enabled = false
-zoom = Vector2(3.47, 2)
-
-[node name="CamaraLider4" type="Camera2D" parent="."]
-position = Vector2(530, 198)
-enabled = false
-zoom = Vector2(3.5, 2)
-
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
@@ -56,3 +36,5 @@ offset_right = 468.951
 offset_bottom = 292.674
 scale = Vector2(0.618994, 0.501667)
 texture_normal = ExtResource("3_wgbt3")
+
+[connection signal="pressed" from="Control/Pcmenu" to="." method="_on_pcmenu_pressed"]
