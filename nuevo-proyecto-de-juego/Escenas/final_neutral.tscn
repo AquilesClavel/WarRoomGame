@@ -47,6 +47,7 @@ texture = ExtResource("2_own1x")
 expand_mode = 1
 
 [node name="Button" type="Button" parent="Control"]
+layout_mode = 0
 offset_left = 964.0
 offset_top = 550.0
 offset_right = 1128.0

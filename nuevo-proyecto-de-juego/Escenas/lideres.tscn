@@ -56,3 +56,5 @@ offset_right = 468.951
 offset_bottom = 292.674
 scale = Vector2(0.618994, 0.501667)
 texture_normal = ExtResource("3_wgbt3")
+
+[connection signal="pressed" from="Control/Pcmenu" to="." method="_on_pcmenu_pressed"]
