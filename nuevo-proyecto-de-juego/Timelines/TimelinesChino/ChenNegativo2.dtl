@@ -1,0 +1,11 @@
+[style name="Style llamada"]
+join "Chen Zhenhua" center
+"Chen Zhenhua": El mundo está en constante conflicto porque algunos no entienden el significado de respeto. En tu opinión, ¿Cómo se gana el respeto de los demás?
+- A veces, el respeto se gana entendiendo a los demás primero.
+	[signal arg="negativaChenCH"]
+	[signal arg="positivaEthanUS"]
+	"Chen Zhenhua": Quizás. Aunque entender sin actuar es simplemente perder el tiempo.
+- El respeto depende de cómo te perciban, y eso no siempre está bajo tu control.
+	[signal arg="positivaChenCH"]
+	[signal arg="negativaDimitriRU"]
+	"Chen Zhenhua": ¿Dejarías que otros dicten tu valor?

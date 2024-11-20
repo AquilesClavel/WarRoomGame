@@ -110,6 +110,7 @@ func obtener_estado():
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	transcionar("M")
+	Computadora.manejar_victoria("2")
 	Dialogic.signal_event.connect(Evento)
 	
 
