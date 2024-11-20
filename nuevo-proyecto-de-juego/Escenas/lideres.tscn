@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://7qpws6yepan5"]
+[gd_scene load_steps=5 format=3 uid="uid://7qpws6yepan5"]
 
 [ext_resource type="Script" path="res://Scripts/lideres.gd" id="1_a27st"]
 [ext_resource type="Texture2D" uid="uid://cogimwj2g688l" path="res://Assets/Strangelove.jpg" id="2_yh407"]
 [ext_resource type="Texture2D" uid="uid://bkuanf5qbkt2m" path="res://Assets/pcmenu.png" id="3_wgbt3"]
+[ext_resource type="PackedScene" uid="uid://40w23d8la6q8" path="res://Escenas/Computadora.tscn" id="4_711hw"]
 
 [node name="Lideres" type="Node2D"]
 script = ExtResource("1_a27st")
@@ -12,16 +13,24 @@ position = Vector2(0, 1)
 texture = ExtResource("2_yh407")
 
 [node name="CameraGeneral" type="Camera2D" parent="."]
-enabled = false
 zoom = Vector2(0.606, 0.8)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 4.0
+offset_top = 918.0
+offset_right = 1287.0
+offset_bottom = 1607.0
+color = Color(0, 0, 0, 0.854902)
+
+[node name="Computadora" parent="." instance=ExtResource("4_711hw")]
+offset_left = 69.0
+offset_top = 940.0
+offset_right = 69.0
+offset_bottom = 940.0
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_left = -444.0
-offset_top = -340.0
-offset_right = 453.0
-offset_bottom = 337.0
 
 [node name="Pcmenu" type="TextureButton" parent="Control"]
 layout_mode = 1
@@ -30,11 +39,14 @@ anchor_left = -0.81
 anchor_top = 0.263
 anchor_right = 0.417
 anchor_bottom = 0.838
-offset_left = 903.57
-offset_top = 246.949
-offset_right = 468.951
-offset_bottom = 292.674
+offset_left = -262.0
+offset_top = 90.0
+offset_right = 404.0
+offset_bottom = 465.0
 scale = Vector2(0.618994, 0.501667)
 texture_normal = ExtResource("3_wgbt3")
+
+[node name="CameraCompu" type="Camera2D" parent="."]
+position = Vector2(649, 1261)
 
 [connection signal="pressed" from="Control/Pcmenu" to="." method="_on_pcmenu_pressed"]

@@ -37,7 +37,12 @@ extends Control
 @onready var btnRegresar = $ColorRect/btnRegresar
 @onready var btnAyudaGob = $ColorRect/btnAyudaGobernantes
 @onready var btnAyudaCom =$ColorRect/btnAyudaComputadora
-var primeraVez = MusicaFondo.primeraVez
+
+@onready var caratristeGen =$ColorRect/Estatus/ColorRect/caratriste
+@onready var carafelizGen = $ColorRect/Estatus/ColorRect/carafeliz
+@onready var caraneutraGen =$ColorRect/Estatus/ColorRect/caraneutra
+
+@onready var lideres = get_node("/root/Lideres")
 
 #Estados automata
 enum Estado {CONF,INICIO,POSITIVO,NEUTRAL,NEGATIVO,VICTORIA,DERROTA}
@@ -49,9 +54,6 @@ var pila :Array = []
 
 func _ready() -> void:
 	hide()
-	if primeraVez == false:
-		Dialogic.start("AyudaComputadora")
-	MusicaFondo.primeraVez = true
 	manejar_victoria(" ")
 	manejar_victoria("2")
 
@@ -70,9 +72,10 @@ func _on_btn_ayuda_gobernantes_pressed() -> void:
 
 
 func _on_btn_regresar_pressed() -> void:
-	var result;
-	result=get_tree().change_scene_to_file("res://Escenas/lideres.tscn")
-	print(result)
+	hide()
+	lideres.CamaraCompu.set_enabled(false)
+	lideres.CamaraGeneral.set_enabled(true)
+	
 
 
 func _on_chench_pressed() -> void:
@@ -101,11 +104,37 @@ func actualizarEstatusChenCH():
 			caratristeChen.hide()
 			plusChen.set_self_modulate("ffffff1f")
 			plusplusChen.set_self_modulate("ffffff1f")
-
+		"Estado Muy Positivo":
+			carafelizChen.show()
+			caratristeChen.hide()
+			plusChen.set_self_modulate("ffffff")
+			plusplusChen.set_self_modulate("ffffff1f")
+		"Estado Extremadamente Positivo":
+			carafelizChen.show()
+			caratristeChen.hide()
+			plusChen.set_self_modulate("ffffff")
+			plusplusChen.set_self_modulate("ffffff")
+		"Estado Muy Negativo":
+			carafelizChen.hide()
+			caratristeChen.show()
+			plusChen.set_self_modulate("ffffff")
+			plusplusChen.set_self_modulate("ffffff1f")
+		"Estado Extremadamente Negativo":
+			carafelizChen.hide()
+			caratristeChen.show()
+			plusChen.set_self_modulate("ffffff")
+			plusplusChen.set_self_modulate("ffffff")
+		"Estado Bloqueado":
+			carafelizChen.hide()
+			caratristeChen.hide()
+			caraneutraChen.show()
+			plusChen.set_self_modulate("ffffff1f")
+			plusplusChen.set_self_modulate("ffffff1f")
 			
 	
 	print(estado_actual)
 
+	
 
 
 func manejar_victoria(decision:String)->void:
@@ -131,18 +160,31 @@ func manejar_victoria(decision:String)->void:
 				"1":
 					palabra.append(decision)
 					pila.push_front("P")
+					caratristeGen.hide()
+					carafelizGen.show()
+					caraneutraGen.hide()
+					
 				"2" when pila[0] == "P":
 					palabra.append(decision)
 					pila.pop_front()
+					caratristeGen.hide()
+					carafelizGen.show()
+					caraneutraGen.hide()
 				"2" when pila[0] == "#":
 					palabra.append(decision)
 					pila.pop_front()
 					pila.push_front("#")
 					pila.push_front("N")
 					estado_actual = Estado.NEGATIVO
+					caratristeGen.show()
+					carafelizGen.hide()
+					caraneutraGen.hide()
 				" " when pila[0] == "P":
 					palabra.append(decision)
 					pila.pop_front()
+					caratristeGen.hide()
+					carafelizGen.show()
+					caraneutraGen.hide()
 					estado_actual =Estado.VICTORIA
 					print("FINAL VICTORIA")
 					MusicaFondo.cambiarFondo("Bueno")
@@ -152,6 +194,9 @@ func manejar_victoria(decision:String)->void:
 				" " when pila[0] == "#":
 					palabra.append(decision)
 					pila.pop_front()
+					caratristeGen.hide()
+					carafelizGen.hide()
+					caraneutraGen.show()
 					estado_actual =Estado.NEUTRAL
 					print("FINAL NEUTRAL")
 					MusicaFondo.cambiarFondo("Neutral")
@@ -163,18 +208,31 @@ func manejar_victoria(decision:String)->void:
 				"2":
 					palabra.append(decision)
 					pila.push_front("N")
+					caratristeGen.show()
+					carafelizGen.hide()
+					caraneutraGen.hide()
+					
 				"1" when pila[0] == "N":
 					palabra.append(decision)
 					pila.pop_front()
+					caratristeGen.show()
+					carafelizGen.hide()
+					caraneutraGen.hide()
 				"1" when pila[0] == "#":
 					palabra.append(decision)
 					pila.pop_front()
 					pila.push_front("#")
 					pila.push_front("P")
+					caratristeGen.hide()
+					carafelizGen.show()
+					caraneutraGen.hide()
 					estado_actual = Estado.POSITIVO
 				" " when pila[0] == "N":
 					palabra.append(decision)
 					pila.pop_front()
+					caratristeGen.show()
+					carafelizGen.hide()
+					caraneutraGen.hide()
 					estado_actual =Estado.DERROTA
 					print("FINAL DERROTA")
 					MusicaFondo.cambiarFondo("Malo")
@@ -184,6 +242,9 @@ func manejar_victoria(decision:String)->void:
 				" " when pila[0] == "#":
 					palabra.append(decision)
 					pila.pop_front()
+					caratristeGen.hide()
+					carafelizGen.hide()
+					caraneutraGen.show()
 					estado_actual =Estado.NEUTRAL
 					print("FINAL NEUTRAL")
 					MusicaFondo.cambiarFondo("Neutral")

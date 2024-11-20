@@ -1,6 +1,6 @@
 extends Node
 
-@onready var Computadora = get_node("/root/Control")
+@onready var Computadora = get_node("/root/Lideres/Computadora")
 
 #Estados del Automata
 enum Estados {
