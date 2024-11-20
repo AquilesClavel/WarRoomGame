@@ -52,6 +52,12 @@ var palabra: Array = []
 #Pila  
 var pila :Array = []
 
+#banderasPresentaciones
+var primeraCH = false
+var primeraRU = false
+var primeraKR = false
+var primeraUS = false
+
 func _ready() -> void:
 	hide()
 	manejar_victoria(" ")
@@ -80,18 +86,22 @@ func _on_btn_regresar_pressed() -> void:
 
 func _on_chench_pressed() -> void:
 	CallChen.show()
-	Dialogic.start("ChenIntroduccion")
+	if primeraCH == false:
+		Dialogic.start("ChenIntroduccion")
+	else:
+		escogerTimelineChino()
 	Dialogic.timeline_ended.connect(terminoChino)
 	
+
 
 func terminoChino():
 	actualizarEstatusChenCH()
 	CallChen.hide()
-
+#
 func actualizarEstatusChenCH():
-	var estatus = btnChenCH.obtener_estado()
-	
-	match estatus:
+	var estatusCH = btnChenCH.obtener_estado()
+
+	match estatusCH:
 		"Estado Negativo":
 			print("estado negativo chino")
 			carafelizChen.hide()
@@ -135,6 +145,23 @@ func actualizarEstatusChenCH():
 	print(estado_actual)
 
 	
+func escogerTimelineChino():
+	var estatusCH = btnChenCH.obtener_estado()
+	match estatusCH:
+		"Estado Negativo":
+			pass
+		"Estado Positivo":
+			pass
+		"Estado Muy Positivo":
+			pass
+		"Estado Extremadamente Positivo":
+			pass
+		"Estado Muy Negativo":
+			pass
+		"Estado Extremadamente Negativo":
+			pass
+		"Estado Bloqueado":
+			pass
 
 
 func manejar_victoria(decision:String)->void:
