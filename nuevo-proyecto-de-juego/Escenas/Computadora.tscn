@@ -39,6 +39,7 @@ color = Color(0, 0, 0, 0.752941)
 metadata/_edit_lock_ = true
 
 [node name="EstatusChen" type="Label" parent="ColorRect"]
+layout_mode = 0
 offset_left = 304.0
 offset_top = 128.0
 offset_right = 416.0
@@ -56,6 +57,7 @@ metadata/_edit_lock_ = true
 
 [node name="caraneutra" type="TextureRect" parent="ColorRect/EstatusChen/ColorRect"]
 visible = false
+layout_mode = 0
 offset_left = 9.5
 offset_top = 23.5
 offset_right = 65.5
@@ -65,6 +67,7 @@ expand_mode = 4
 
 [node name="plus2" type="TextureRect" parent="ColorRect/EstatusChen/ColorRect"]
 self_modulate = Color(1, 1, 1, 0.121569)
+layout_mode = 0
 offset_left = 92.25
 offset_top = 43.0
 offset_right = 108.25
@@ -84,6 +87,7 @@ expand_mode = 4
 
 [node name="carafeliz" type="TextureRect" parent="ColorRect/EstatusChen/ColorRect"]
 visible = false
+layout_mode = 0
 offset_left = 9.5
 offset_top = 23.5
 offset_right = 65.5
@@ -92,6 +96,7 @@ texture = ExtResource("4_8jori")
 expand_mode = 4
 
 [node name="caratriste" type="TextureRect" parent="ColorRect/EstatusChen/ColorRect"]
+layout_mode = 0
 offset_left = 9.5
 offset_top = 23.5
 offset_right = 65.5
@@ -100,6 +105,7 @@ texture = ExtResource("5_l8jxg")
 expand_mode = 4
 
 [node name="EstatusDimitri" type="Label" parent="ColorRect"]
+layout_mode = 0
 offset_left = 624.0
 offset_top = 320.0
 offset_right = 736.0
@@ -108,6 +114,7 @@ text = "Estatus
 "
 
 [node name="ColorRect" type="ColorRect" parent="ColorRect/EstatusDimitri"]
+layout_mode = 0
 offset_top = 32.0
 offset_right = 112.0
 offset_bottom = 136.0
@@ -115,6 +122,7 @@ color = Color(0.686275, 0.686275, 0.686275, 1)
 
 [node name="plus1" type="TextureRect" parent="ColorRect/EstatusDimitri/ColorRect"]
 self_modulate = Color(1, 1, 1, 0.121569)
+layout_mode = 0
 offset_left = 71.5
 offset_top = 42.75
 offset_right = 87.5
@@ -124,6 +132,7 @@ expand_mode = 4
 
 [node name="plus2" type="TextureRect" parent="ColorRect/EstatusDimitri/ColorRect"]
 self_modulate = Color(1, 1, 1, 0.121569)
+layout_mode = 0
 offset_left = 92.25
 offset_top = 43.0
 offset_right = 108.25
@@ -133,6 +142,7 @@ expand_mode = 4
 
 [node name="caraneutra" type="TextureRect" parent="ColorRect/EstatusDimitri/ColorRect"]
 visible = false
+layout_mode = 0
 offset_left = 9.5
 offset_top = 23.5
 offset_right = 65.5
@@ -142,6 +152,7 @@ expand_mode = 4
 
 [node name="carafeliz" type="TextureRect" parent="ColorRect/EstatusDimitri/ColorRect"]
 visible = false
+layout_mode = 0
 offset_left = 9.5
 offset_top = 23.5
 offset_right = 65.5
@@ -150,6 +161,7 @@ texture = ExtResource("4_8jori")
 expand_mode = 4
 
 [node name="caratriste" type="TextureRect" parent="ColorRect/EstatusDimitri/ColorRect"]
+layout_mode = 0
 offset_left = 9.5
 offset_top = 23.5
 offset_right = 65.5
@@ -158,6 +170,7 @@ texture = ExtResource("5_l8jxg")
 expand_mode = 4
 
 [node name="EstatusEthan" type="Label" parent="ColorRect"]
+layout_mode = 0
 offset_left = 624.0
 offset_top = 128.0
 offset_right = 736.0
@@ -166,6 +179,7 @@ text = "Estatus
 "
 
 [node name="ColorRect" type="ColorRect" parent="ColorRect/EstatusEthan"]
+layout_mode = 0
 offset_top = 32.0
 offset_right = 112.0
 offset_bottom = 136.0
@@ -173,6 +187,7 @@ color = Color(0.686275, 0.686275, 0.686275, 1)
 
 [node name="plus1" type="TextureRect" parent="ColorRect/EstatusEthan/ColorRect"]
 self_modulate = Color(1, 1, 1, 0.121569)
+layout_mode = 0
 offset_left = 71.5
 offset_top = 42.75
 offset_right = 87.5
@@ -182,6 +197,7 @@ expand_mode = 4
 
 [node name="plus2" type="TextureRect" parent="ColorRect/EstatusEthan/ColorRect"]
 self_modulate = Color(1, 1, 1, 0.121569)
+layout_mode = 0
 offset_left = 92.25
 offset_top = 43.0
 offset_right = 108.25
@@ -191,6 +207,7 @@ expand_mode = 4
 
 [node name="caraneutra" type="TextureRect" parent="ColorRect/EstatusEthan/ColorRect"]
 visible = false
+layout_mode = 0
 offset_left = 9.5
 offset_top = 23.5
 offset_right = 65.5
@@ -200,6 +217,7 @@ expand_mode = 4
 
 [node name="carafeliz" type="TextureRect" parent="ColorRect/EstatusEthan/ColorRect"]
 visible = false
+layout_mode = 0
 offset_left = 9.5
 offset_top = 23.5
 offset_right = 65.5
@@ -208,6 +226,7 @@ texture = ExtResource("4_8jori")
 expand_mode = 4
 
 [node name="caratriste" type="TextureRect" parent="ColorRect/EstatusEthan/ColorRect"]
+layout_mode = 0
 offset_left = 9.5
 offset_top = 23.5
 offset_right = 65.5
@@ -225,6 +244,7 @@ text = "Estatus
 "
 
 [node name="ColorRect" type="ColorRect" parent="ColorRect/EstatusKim"]
+layout_mode = 0
 offset_top = 32.0
 offset_right = 112.0
 offset_bottom = 136.0
@@ -232,6 +252,7 @@ color = Color(0.686275, 0.686275, 0.686275, 1)
 
 [node name="plus1" type="TextureRect" parent="ColorRect/EstatusKim/ColorRect"]
 self_modulate = Color(1, 1, 1, 0.121569)
+layout_mode = 0
 offset_left = 71.5
 offset_top = 42.75
 offset_right = 87.5
@@ -241,6 +262,7 @@ expand_mode = 4
 
 [node name="plus2" type="TextureRect" parent="ColorRect/EstatusKim/ColorRect"]
 self_modulate = Color(1, 1, 1, 0.121569)
+layout_mode = 0
 offset_left = 92.25
 offset_top = 43.0
 offset_right = 108.25
@@ -250,6 +272,7 @@ expand_mode = 4
 
 [node name="caraneutra" type="TextureRect" parent="ColorRect/EstatusKim/ColorRect"]
 visible = false
+layout_mode = 0
 offset_left = 9.5
 offset_top = 23.5
 offset_right = 65.5
@@ -259,6 +282,7 @@ expand_mode = 4
 
 [node name="carafeliz" type="TextureRect" parent="ColorRect/EstatusKim/ColorRect"]
 visible = false
+layout_mode = 0
 offset_left = 9.5
 offset_top = 23.5
 offset_right = 65.5
@@ -267,6 +291,7 @@ texture = ExtResource("4_8jori")
 expand_mode = 4
 
 [node name="caratriste" type="TextureRect" parent="ColorRect/EstatusKim/ColorRect"]
+layout_mode = 0
 offset_left = 9.5
 offset_top = 23.5
 offset_right = 65.5
@@ -318,6 +343,7 @@ texture_normal = ExtResource("5_k24p8")
 [node name="LlamandoKim" type="TextureRect" parent="ColorRect"]
 visible = false
 self_modulate = Color(0, 0.43, 0.0716666, 1)
+layout_mode = 0
 offset_left = 128.0
 offset_top = 320.0
 offset_right = 280.0
@@ -339,6 +365,7 @@ expand_mode = 4
 [node name="LlamandoEthan" type="TextureRect" parent="ColorRect"]
 visible = false
 self_modulate = Color(0, 0.431373, 0.0705882, 1)
+layout_mode = 0
 offset_left = 448.0
 offset_top = 128.0
 offset_right = 600.0
@@ -349,6 +376,7 @@ expand_mode = 4
 [node name="LlamandoChen" type="TextureRect" parent="ColorRect"]
 visible = false
 self_modulate = Color(0, 0.431373, 0.0705882, 1)
+layout_mode = 0
 offset_left = 128.0
 offset_top = 128.0
 offset_right = 280.0
