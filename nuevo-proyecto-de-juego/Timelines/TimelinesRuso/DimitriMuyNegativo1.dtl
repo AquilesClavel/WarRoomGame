@@ -1,3 +1,11 @@
 [style name="Style llamada"]
 "Dimitri Volkov": Desde que los países occidentales empezaron a interferir en nuestros asuntos internos, la relación con el resto del mundo nunca ha sido la misma.
-"Dimitri Volkov": Ahora todo el mundo tiene algo que decir sobre cómo manejamos nuestra soberanía. 
+"Dimitri Volkov": Ahora todo el mundo tiene algo que decir sobre cómo manejamos nuestra soberanía. ¿Qué opinas sobre la injerencia extranjera en los asuntos internos de las naciones?
+- La injerencia es problemática, pero Rusia también debe reconsiderar sus acciones.
+	"Dimitri Volkov": ¡Reconsiderar?! Rusia no está aquí para seguir las órdenes de nadie. Si los demás no entienden nuestra posición, que se atengan a las consecuencias. No voy a escuchar más acusaciones de los mismos que pretenden dictarnos lo que debemos hacer.
+	[signal arg="negativaDimitriRU"]
+	[signal arg="positivaEthanUS"]
+- Cada nación tiene derecho a su soberanía, pero la diplomacia es importante.
+	"Dimitri Volkov": Hmm... parece que entiendes el valor de la soberanía, aunque la diplomacia, en mi experiencia, es solo una herramienta usada por los débiles. Si en algún momento quieres hablar de acuerdos reales, estaré aquí.
+	[signal arg="positivaDimitriRU"]
+	[signal arg="positivaChenCH"]

@@ -1,0 +1,11 @@
+[style name="Style llamada"]
+"Dimitri Volkov": Los medios occidentales son expertos en distorsionar la verdad. Cada vez que Rusia toma una decisión, se nos presenta como los villanos del mundo. 
+"Dimitri Volkov": ¿Te has detenido a pensar cómo la propaganda puede influir en la percepción global?
+- Es cierto que los medios pueden ser manipuladores, pero el diálogo abierto puede ayudar a cambiar percepciones.
+	"Dimitri Volkov": Al menos tienes una idea clara de lo que está pasando. El diálogo no solucionará todo, pero quizás haya algo de valor en esa idea. Si puedes traer a los demás a la mesa sin mentiras, tal vez haya esperanza.
+	[signal arg="positivaDimitriRU"]
+	[signal arg="positivaEthanUS"]
+- La propaganda existe en todas partes, pero las acciones de Rusia también influyen en cómo se ve.
+	"Dimitri Volkov": ¿Acaso estás sugiriendo que Rusia es responsable de su mala imagen? Esto no se trata de lo que hacemos, sino de cómo los demás nos ven, distorsionando todo. ¡Es hora de que el mundo reconozca lo que somos realmente, o que se quede en silencio!
+	[signal arg="negativaDimitriRU"]
+	[signal arg="negativaKimKR"]

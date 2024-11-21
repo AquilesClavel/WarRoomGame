@@ -1,0 +1,14 @@
+[style name="Style llamada"]
+"Dimitri Volkov": La estabilidad global está en juego. La diplomacia debería ser nuestra herramienta para evitar conflictos. 
+"Dimitri Volkov": Pero, ¿crees que es posible lograr una verdadera paz cuando algunas naciones parecen siempre tener otras intenciones?
+- Sí, la diplomacia puede ser el camino, pero se necesita honestidad y compromiso real de todas las partes involucradas.
+	"Dimitri Volkov": Exactamente. La honestidad es la base de cualquier acuerdo duradero. Si las naciones son sinceras en sus deseos de paz, entonces podremos lograr grandes avances. Estoy dispuesto a trabajar con alguien que valore eso.
+	[signal arg="positivaDimitriRU"]
+	[signal arg="positivaChenCH"]
+- La diplomacia no sirve si las potencias no están dispuestas a ceder. A veces, es necesario imponer nuestra voluntad.
+	"Dimitri Volkov": ¡Eso es exactamente lo que temía! Nadie quiere someterse a la voluntad de otra nación, y mucho menos Rusia. Si piensas que la diplomacia es solo un juego de poder, estas negociaciones no llegarán a ningún lado.
+	[signal arg="negativaDimitriRU"]
+	[signal arg="negativaEthanUS"]
+- La paz es posible si todos estamos dispuestos a comprometernos, aunque sea en los detalles. No es fácil, pero es el camino correcto.
+	"Dimitri Volkov": Bien dicho. La paz no se construye de la noche a la mañana, pero si estamos dispuestos a poner de nuestra parte, el futuro puede ser más prometedor. Estoy de acuerdo contigo en este punto.
+	[signal arg="positivaDimitriRU"]
