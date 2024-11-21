@@ -1,0 +1,14 @@
+[style name="Style llamada"]
+join "Dimitri Volkov" center
+"Dimitri Volkov": Las protestas dentro de nuestro país no cesan, y las potencias extranjeras aprovechan cada oportunidad para interferir.
+- Podemos contener la situación sin necesidad de recurrir a medidas extremas. No todo está perdido.
+	[signal arg="negativaDimitriRU"]
+	[signal arg="negativaEthanUS"]
+	"Dimitri Volkov": No hay forma de hacer que se calmen sin recurrir a la fuerza.
+- Es vital que mostremos un frente unido. Si seguimos debilitándonos internamente, nos destruirán desde afuera.
+	[signal arg="positivaDimitriRU"]
+	[signal arg="positivaKimKR"]
+	"Dimitri Volkov": No me queda más que luchar con lo que tengo.
+- Debemos tomar el control absoluto ahora
+	[signal arg="negativaDimitriRU"]
+	"Dimitri Volkov": Ya hemos estado tomando medidas extremas

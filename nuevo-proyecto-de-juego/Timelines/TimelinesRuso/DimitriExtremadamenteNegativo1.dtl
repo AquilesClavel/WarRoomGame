@@ -1,0 +1,14 @@
+[style name="Style llamada"]
+join "Dimitri Volkov" center
+"Dimitri Volkov":  Los aliados que pensé que eran confiables me han fallado, y ahora estamos atrapados entre el caos interno y la presión externa.
+- Deberíamos prepararnos para tomar decisiones drásticas. El tiempo se nos acaba.
+	[signal arg="positivaDimitriRU"]
+	"Dimitri Volkov": No hay tiempo para dudar.
+- Tal vez debemos intentar encontrar una solución diplomática antes de actuar precipitadamente.
+	[signal arg="negativaDimitriRU"]
+	[signal arg="negativaKimKR"]
+	"Dimitri Volkov": No puedo confiar más en esos acuerdos
+- Quizá la única opción sea cortar por lo sano y tomar una postura más flexible.
+	[signal arg="negativaDimitriRU"]
+	[signal arg="positivaEthanUS"]
+	"Dimitri Volkov": Debemos mostrar que no estamos dispuestos a ceder.
