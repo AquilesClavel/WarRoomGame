@@ -1,0 +1,16 @@
+[style name="Style llamada"]
+"Dimitri Volkov": Soy Dimitri Volkov, Presidente de la Federación Rusa.
+"Dimitri Volkov": No me importa tu postura, {nombreJugador}, pero entiendo que las negociaciones tienen el poder de cambiar la historia.
+"Dimitri Volkov": Rusia ha sido objeto de muchas críticas, pero sé que pocos entienden su verdadera fortaleza y propósito.
+"Dimitri Volkov": ¿Qué sabes de la grandeza de Rusia, {nombreJugador}? ¿Acaso crees que realmente puedes ayudar a resolver este conflicto?
+- Estoy aquí para encontrar un camino para todos, pero sin comprometer los intereses fundamentales de ninguna nación.
+	"Dimitri Volkov": Hmph. Un comienzo decente. No muchos se atreverían a decirlo tan directamente. Veamos qué puedes aportar.
+	[signal arg="positivaDimitriRU"]
+	[signal arg="positivaEthanUS"]
+- La paz solo será posible si se respeta cada nación. Rusia debe ser escuchada, pero no al costo de la estabilidad global.
+	"Dimitri Volkov": Ah, entonces sabes cómo funciona este juego. Tal vez no sea tan inútil como pensaba. Pero, recuerda, la estabilidad también significa poder para las naciones más fuertes.
+	[signal arg="positivaDimitriRU"]
+- Mi objetivo es evitar la destrucción total. Si Rusia tiene razones para actuar, debemos encontrar una solución.
+	"Dimitri Volkov": Un mediador que entiende la importancia de la paz... interesante. Pero la paz, {nombreJugador}, no debe ser sinónimo de debilidad.
+	[signal arg="negativaDimitriRU"]
+	[signal arg="positivaEthanUS"]

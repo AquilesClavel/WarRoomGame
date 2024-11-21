@@ -1,0 +1,13 @@
+[style name="Style llamada"]
+"Kim Tae-woo": En el pasado, muchos países nos han atacado o tratado de someter a nuestro pueblo. El mundo debe entender que no podemos permitir que nos arrinconen. Si todo se reduce a una guerra, que así sea.
+"Kim Tae-woo": Si los países como Estados Unidos siguen presionando para que entreguemos nuestras armas nucleares.
+"Kim Tae-woo": ¿Qué deberíamos hacer? ¿Deberíamos ceder o defendernos como lo hemos hecho hasta ahora?"
+- Nunca debemos ceder. Las armas nucleares son la única garantía de seguridad.
+	"Kim Tae-woo": ¡Exactamente! ¡Nunca cederemos ante los gringos!  Ellos quieren nuestra destrucción, y si tenemos que destruirlos primero, así será. ¡Defenderemos nuestra soberanía con cada arma a nuestra disposición!
+	[signal arg="positivaKimKR"]
+	[signal arg="positivaDimitriRU"]
+- La paz es importante, pero un desarme unilateral sería un error. Cada país debe poder defenderse como considere necesario.
+	"Kim Tae-woo": Tú también eres débil. Si nos desarmamos, seremos como ovejas esperando ser devoradas por lobos. No podemos arriesgarnos a perder nuestra capacidad de defensa.
+	[signal arg="negativaKimKR"]
+	[signal arg="positivaEthanUS"]
+	[signal arg="positivaChenCH"]

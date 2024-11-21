@@ -1,0 +1,16 @@
+[style name="Style llamada"]
+"Kim Tae-woo": Me complace ver que estás dispuesto a escuchar las preocupaciones de las naciones. 
+"Kim Tae-woo": La diplomacia es un camino largo y complicado, pero vital para la paz mundial.
+"Kim Tae-woo": ¿Qué opinas sobre negociar acuerdos de paz con aquellos que tradicionalmente nos ven como una amenaza?
+- Las negociaciones siempre son posibles si ambas partes están dispuestas a ceder algo.
+	"Kim Tae-woo": La paz es lo más importante, y si estamos dispuestos a comprometernos, incluso con las potencias hostiles, podemos evitar la destrucción mutua.
+	[signal arg="positivaKimKR"]
+	[signal arg="positivaEthanUS"]
+- Es complicado. Algunos países no están interesados en negociar, pero creo que se pueden hacer avances.
+	[signal arg="positivaKimKR"]
+- No creo que haya mucho por negociar con esos países. Han tomado demasiadas medidas agresivas.
+	"Kim Tae-woo":  El conflicto solo lleva más destrucción.
+	[signal arg="negativaKimKR"]
+	[signal arg="negativaEthanUS"]
+	[signal arg="negativaChenCH"]
+	[signal arg="negativaDimitriRU"]

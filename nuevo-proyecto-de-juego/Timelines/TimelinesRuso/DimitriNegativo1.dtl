@@ -1,0 +1,12 @@
+[style name="Style llamada"]
+"Dimitri Volkov": No tengo tiempo para discursos vacíos, {nombreJugador}. Rusia ha sufrido muchas humillaciones, y ahora es el momento de recuperar lo que nos pertenece.
+"Dimitri Volkov": ¿Qué tienes para ofrecerme que valga la pena?
+- Podemos asegurar tus territorios, pero todos deben ganar.
+	"Dimitri Volkov": ¿Pero dónde está el respeto por el poder ruso? Lo que necesitamos es acción, no promesas vacías.
+	[signal arg="negativaDimitriRU"]
+	[signal arg="positivaEthanUS"]
+- Que Rusia haga lo que quiera, sin importar a los demás.
+	"Dimitri Volkov": ¡Eso es lo que quiero escuchar! Si tú estás de acuerdo con esta visión, quizás podamos hablar en términos que tengan sentido. El mundo ha olvidado el poder de Rusia, es hora de que lo recordemos.
+	[signal arg="positivaDimitriRU"]
+	[signal arg="negativaEthanUS"]
+	[signal arg="negativaChenCH"]

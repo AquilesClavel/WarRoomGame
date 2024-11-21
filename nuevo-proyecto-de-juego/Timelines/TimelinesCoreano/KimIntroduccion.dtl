@@ -1,0 +1,18 @@
+[style name="Style llamada"]
+join "Kim Tae-woo" center
+"Kim Tae-woo": Soy Kim Tae-Woo, Líder Supremo de la gloriosa República Popular Democrática de Corea. 
+"Kim Tae-woo": No me interesan tus discursos moralistas, {nombreJugador}, pero reconozco que tus palabras podrían influir en el curso de los acontecimientos.
+"Kim Tae-woo": Mi nación ha soportado bloqueos y humillaciones por demasiado tiempo. 
+"Kim Tae-woo": No me interesan tus discursos moralistas, {nombreJugador}, pero reconozco que tus palabras podrían influir en el curso de los acontecimientos.
+"Kim Tae-woo": ¿Crees que estas negociaciones realmente pueden cambiar el destino de mi nación?"
+- Estoy dispuesto a escuchar, pero necesitas demostrar que no eres una amenaza para la seguridad global.
+	"Kim Tae-woo": Hmph. Un comienzo sensato. Quizá no seas como los otros líderes que solo buscan imponer su voluntad. Hablaré... por ahora.
+	[signal arg="positivaKimKR"]
+	[signal arg="negativaEthanUS"]
+- Tienes mucho que probar si quieres un cambio real. Estas negociaciones son una oportunidad de evitar un desastre.
+	"Kim Tae-woo": ¿Probar? ¿A ti? No tengo que justificar nada a nadie. Si intentas doblegarme, aprenderás por qué Corea del Norte sigue en pie.
+	[signal arg="positivaEthanUS"]
+	[signal arg="negativaKimKR"]
+- Las negociaciones no cambiarán nada si sigues empeñado en imponer tu voluntad. Tienes que comprometerte al diálogo.
+	"Kim Tae-woo": ¿Comprometerme? Interesante... Pero cuidado, {nombreJugador}. No confundas compromiso con debilidad.
+	[signal arg="positivaChenCH"]

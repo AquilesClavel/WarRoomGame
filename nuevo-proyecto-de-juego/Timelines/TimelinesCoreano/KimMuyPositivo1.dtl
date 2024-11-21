@@ -1,0 +1,14 @@
+[style name="Style llamada"]
+"Kim Tae-woo": Me alegra escuchar que compartimos el objetivo de fortalecer nuestras economías, aunque muchos no lo comprenden. El desarrollo económico puede ser la clave para asegurar la paz duradera.
+"Kim Tae-woo": ¿Cómo ves la cooperación internacional en temas económicos, especialmente en tiempos de inestabilidad?
+- La cooperación internacional es esencial para asegurar la estabilidad económica global.
+	"Kim Tae-woo": Algunos compromisos pueden ser peligrosos. Sin embargo, hay momentos en los que la unidad puede fortalecer a todos.
+	[signal arg="postivaKimKR"]
+- La cooperación es importante, pero no estoy seguro de que todos los países deban comprometer su soberanía económica.
+	"Kim Tae-woo": Sabes lo que se necesita. La cooperación es clave, pero las naciones deben ser sabias y proteger sus intereses. No todo debe ser entregado.
+	[signal arg="positivaKimKR"]
+	[signal arg="positivaEthanUS"]
+- El trabajo conjunto es clave para el futuro. Si cedemos algo de control, podemos fortalecer nuestras economías.
+	"Kim Tae-woo": Esa es la mentalidad que nos llevará a la ruina. Ceder poder nunca es una buena idea. Solo los fuertes, los que mantienen el control, prosperarán.
+	[signal arg="negativaKimKR"]
+	[signal arg="positivaChenCH"]
