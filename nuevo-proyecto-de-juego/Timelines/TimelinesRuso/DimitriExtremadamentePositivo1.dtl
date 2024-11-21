@@ -1,0 +1,16 @@
+[style name="Style llamada"]
+"Dimitri Volkov": Los tiempos han cambiado, y veo que algunos países, a pesar de las diferencias, pueden encontrar formas de cooperar. 
+"Dimitri Volkov": Hay mucho que Rusia y el resto del mundo podrían lograr si dejamos de lado los egos. 
+"Dimitri Volkov": ¿Qué piensas sobre la cooperación internacional para la paz?
+- La cooperación es clave. Si todos buscamos el beneficio mutuo, podemos evitar muchos conflictos.
+	"Dimitri Volkov": Finalmente, alguien que entiende lo que es necesario para avanzar. Los intereses comunes son más importantes que la discordia. Si estás dispuesto a trabajar en eso, podemos hacer grandes cosas juntos.
+	[signal arg="positivaDimitriRU"]
+	[signal arg="positivaChenCH"]
+- Creo que el mundo necesita más alianzas basadas en el respeto y la equidad. Todos los países pueden ganar con la cooperación.
+	"Dimitri Volkov": Esa es una perspectiva que respeto. Si el resto del mundo compartiera esa visión, las cosas serían mucho más fáciles. Puede que haya esperanza para el futuro después de todo.
+	[signal arg="positivaDimitriRU"]
+	[signal arg="positivaEthanUS"]
+- Cooperar con todos suena bien, pero las naciones fuertes deberían liderar, ya que son las que realmente marcan la diferencia.
+	"Dimitri Volkov": ¡Eso es precisamente lo que más temo! Las naciones que se consideran superiores son las que siempre buscan dominar. Rusia nunca aceptará ser dirigida por los intereses de otros. Esto podría complicar nuestras futuras negociaciones.
+	[signal arg="negativaDimitriRU"]
+	[signal arg="positivaKimKR"]
