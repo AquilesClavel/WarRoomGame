@@ -1,0 +1,13 @@
+[style name="Style llamada"]
+join "Ethan Caldwell" center
+"Ethan Caldwell": Nuestro sistema de inteligencia y seguridad ha dado un paso hacia adelante. A pesar de algunas dificultades menores, estamos mejor posicionados para proteger nuestros intereses.
+- Debemos aprovechar esta ventaja para fortalecer aún más nuestra seguridad interna y monitorear los riesgos con más precisión
+	[signal arg="positivaEthanUS"]
+	"Ethan Caldwell": Fortalecer la seguridad es esencial, especialmente ahora que la competencia global se intensifica.
+- Podemos mantenernos vigilantes sin ser excesivos.
+	[signal arg="positivaEthanUS"]
+	"Ethan Caldwell": Es cierto que la moderación tiene su valor. 
+- Tal vez debamos centrarnos más en el fortalecimiento de la diplomacia.
+	[signal arg="negativaEthanUS"]
+	[signal arg="negativaKimKR"]
+	"Ethan Caldwell": La diplomacia es crucial, pero no podemos olvidar que una brecha en nuestra seguridad podría abrir la puerta a vulnerabilidades externas.

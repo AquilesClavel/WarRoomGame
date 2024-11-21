@@ -1,0 +1,17 @@
+[style name="Style llamada"]
+join "Ethan Caldwell" center
+"Ethan Caldwell": Las luchas internas están complicando aún más las decisiones que tomamos. 
+- Debemos priorizar la cohesión para que podamos enfrentar los desafíos desde dentro
+	[signal arg="positivaEthanUS"]
+	[signal arg="negativaDimitriRU"]
+	[signal arg="negativaChenCH"]
+	"Ethan Caldwell": lograr la unidad cuando todos se están mirando con desconfianza no es tarea fácil.
+- El liderazgo debería ser más firme.
+	[signal arg="positivaEthanUS"]
+	[signal arg="positivaKimKR"]
+	"Ethan Caldwell": Necesitamos firmeza, pero con inteligencia.
+- Tal vez sea hora de hacer una limpieza radical. La lealtad debería estar por encima de todo.
+	[signal arg="negativaEthanUS"]
+	[signal arg="positivaKimKR"]
+	[signal arg="positivaDimitriRU"]
+	"Ethan Caldwell": Necesitamos una estructura sólida, no una purga.ncia.

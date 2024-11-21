@@ -1,0 +1,13 @@
+[style name="Style llamada"]
+join "Chen Zhenhua" center
+"Chen Zhenhua": El mundo observa cada uno de nuestros movimientos militares. ¿Crees que deberíamos reforzar nuestra defensa para enviar un mensaje claro?
+- Reforzar la defensa es clave para asegurar la paz y disuadir conflictos.
+	[signal arg="positivaChenCH"]
+	[signal arg="positivaEthanUS"]
+	[signal arg="positivaDimitriRU"]
+	"Chen Zhenhua": La fuerza garantiza que otros se lo piensen dos veces
+- Depende de las circunstancias. La defensa es importante, pero no debe ser excesiva.
+	[signal arg="negativaChenCH"]
+	[signal arg="negativaKimKR"]
+	[signal arg="negativaDimitriRU"]
+	"Chen Zhenhua": A veces hay que demostrar firmeza

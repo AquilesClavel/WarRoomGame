@@ -1,0 +1,14 @@
+[style name="Style llamada"]
+join "Ethan Caldwell" center
+"Ethan Caldwell": Ya no somos solo un jugador en el tablero, ¡somos la pieza clave! ¿Qué piensas de nuestra creciente influencia?
+- No debemos olvidarnos de nuestras raíces. La economía no lo es todo, la estabilidad social también es crucial.
+	[signal arg="negativaEthanUS"]
+	[signal arg="positivaChenCH"]
+	[signal arg="positivaDimitriRU"]
+	"Ethan Caldwell":  Sin una economía fuerte, nada de eso será posible
+- Es el momento de seguir expandiendo su influencia económica.
+	[signal arg="positivaEthanUS"]
+	[signal arg="negativaChenCH"]
+	[signal arg="negativaKimKR"]
+	[signal arg="negativaDimitriRU"]
+	"Ethan Caldwell": Excelente.

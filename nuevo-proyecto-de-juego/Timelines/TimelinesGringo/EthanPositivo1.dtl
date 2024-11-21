@@ -1,0 +1,14 @@
+[style name="Style llamada"]
+join "Ethan Caldwell" center
+"Ethan Caldwell": Las nuevas tecnologías están abriendo puertas para una cooperación más estrecha con nuestros aliados, y estamos listos para liderar en áreas como la inteligencia artificial y la biotecnología.
+- Aprovechemos nuestra posición de liderazgo para establecer estándares globales en estas tecnologías.
+	[signal arg="positivoEthanUS"]
+	[signal arg="negativaChenCH"]
+	"Ethan Caldwell": Quizás. Aunque en nuestra experiencia, los ideales son débiles sin fortaleza detrás.
+- Podemos aprovechar las tecnologías, pero no debemos comprometernos demasiado
+	[signal arg="positivaEthanUS"]
+	[signal arg="positivaChenCH"]
+	"Ethan Caldwell": El tiempo pasa rápidamente, y la innovación no se detiene
+- Deberíamos esperar a ver cómo se desarrollan estas tecnologías antes de tomar una posición más activa.
+	[signal arg="negativaEthanUS"]
+	"Ethan Caldwell": Esperar demasiado podría dejarnos atrás. El mundo no se va a detener para que tengamos tiempo de adaptarnos.

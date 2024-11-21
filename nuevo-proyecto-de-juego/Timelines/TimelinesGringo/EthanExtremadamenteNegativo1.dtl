@@ -1,0 +1,12 @@
+[style name="Style llamada"]
+join "Ethan Caldwell" center
+"Ethan Caldwell": Este país debe seguir siendo el líder mundial, pero sin una economía fuerte, nada de eso es posible. ¿Cómo crees que podemos evitar que nos desborden las nuevas potencias económicas?
+- Debemos invertir en tecnologías que fortalezcan nuestra posición sin depender demasiado de otras naciones.
+	[signal arg="negativaEthanUS"]
+	[signal arg="positivaDimitriRU"]
+	"Ethan Caldwell": Debemos actuar con firmeza si no queremos ser superados.
+- Tenemos que fortalecer nuestras industrias y ser más agresivos con nuestras políticas económicas. Es ahora o nunca.
+	[signal arg="positivaEthanUS"]
+	[signal arg="negativaKimKR"]
+	[signal arg="negativaChenCH"]
+	"Ethan Caldwell": La competencia global no va a esperar.

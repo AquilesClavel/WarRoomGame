@@ -1,0 +1,17 @@
+[style name="Style llamada"]
+join "Ethan Caldwell" center
+"Ethan Caldwell": Los conflictos civiles y las divisiones sociales están arrastrando a nuestra nación hacia el caos.
+- Lo más importante es restablecer el orden
+	[signal arg="positivaChenCH"]
+	[signal arg="positivaEthanUS"]
+	[signal arg="positivaDimitriRU"]
+	"Ethan Caldwell": Restaurar el orden es vital
+- Escuchar más a las voces disidentes podría calmarlas y permitirnos avanzar.
+	[signal arg="negativaChenCH"]
+	[signal arg="negativaKimKR"]
+	[signal arg="negativaDimitriRU"]
+	[signal arg="negativaEthanUS"]
+	"Ethan Caldwell": Ceder ahora podría interpretarse como una derrota
+- Tal vez lo mejor sea imponer una autoridad más fuerte. Hay que tomar el control a toda costa.
+	[signal arg="negativaEthanUS"]
+	"Ethan Caldwell": Esto no es un juego de poder, es la supervivencia de nuestra nación.

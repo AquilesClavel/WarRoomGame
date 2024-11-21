@@ -1,0 +1,11 @@
+[style name="Style llamada"]
+join "Chen Zhenhua" center
+"Chen Zhenhua": Me pregunto\: ¿crees que el éxito se debe más al trabajo individual o a la fuerza del equipo?
+- El equipo siempre es la clave. La cooperación supera cualquier esfuerzo individual.
+	[signal arg="positivaChenCH"]
+	[signal arg="negativaEthanUS"]
+	"Chen Zhenhua": Sin unidad, el progreso sería imposible.
+- El esfuerzo individual es la chispa que enciende el motor. Sin él, no hay equipo.
+	[signal arg="negativaChenCH"]
+	[signal arg="positivaEthanUS"]
+	"Chen Zhenhua": Me preocupa que sobrevalores al individuo.

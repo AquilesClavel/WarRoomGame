@@ -1,0 +1,10 @@
+[style name="Style llamada"]
+join "Chen Zhenhua" center
+"Chen Zhenhua": En cualquier negociación, hay un momento en el que todos los involucrados deben comprometerse a seguir adelante juntos. ¿Cómo decides cuándo es el momento correcto para actuar?
+- El momento adecuado llega cuando los intereses están alineados y las condiciones son favorables.
+	[signal arg="positivaChenCH"]
+	[signal arg="negativaKimKR"]
+	"Chen Zhenhua": Una evaluación precisa.
+- El momento correcto no existe; actuar siempre con rapidez es la clave del éxito.
+	[signal arg="negativaChenCH"]
+	"Chen Zhenhua": La paciencia es un arma poderosa.

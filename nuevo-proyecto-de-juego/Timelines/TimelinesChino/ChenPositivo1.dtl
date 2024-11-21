@@ -3,6 +3,7 @@ join "Chen Zhenhua" center
 "Chen Zhenhua": La cooperación es una herramienta poderosa, pero también un arma de doble filo. En tu opinión, {nombreJugador}, ¿hasta dónde vale la pena confiar en otros?
 - La confianza mutua puede ser más efectiva que cualquier estrategia de defensa.
 	[signal arg="negativaChenCH"]
+	[signal arg="negativaEthanUS"]
 	"Chen Zhenhua": Quizás. Aunque en nuestra experiencia, los ideales son débiles sin fortaleza detrás.
 - Confiar es útil, pero siempre con una estrategia de respaldo.
 	[signal arg="positivaChenCH"]

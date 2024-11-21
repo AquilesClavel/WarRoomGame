@@ -1,0 +1,15 @@
+[style name="Style llamada"]
+join "Ethan Caldwell" center
+"Ethan Caldwell": En cuanto a la seguridad, tenemos las capacidades necesarias para mantenernos a la vanguardia. Nuestra posición es sólida, y las amenazas que antes nos preocupaban están disminuyendo cada vez más.
+- Debemos seguir mejorando nuestras capacidades de seguridad, asegurándonos de estar siempre un paso adelante
+	[signal arg="positivaEthanUS"]
+	[signal arg="positivaDimitriRU"]
+	"Ethan Caldwell": Totalmente de acuerdo.
+- La seguridad es importante, pero tal vez sea momento de pensar en otras áreas
+	[signal arg="negativaEthanUS"]
+	[signal arg="positivaChenCH"]
+	"Ethan Caldwell": La seguridad sigue siendo crucial
+- Hay otros sectores que requieren atención inmediata antes que la protección.
+	[signal arg="positivaChenCH"]
+	[signal arg="positivaDimitriRU"]
+	"Ethan Caldwell": Eso podría ser peligroso

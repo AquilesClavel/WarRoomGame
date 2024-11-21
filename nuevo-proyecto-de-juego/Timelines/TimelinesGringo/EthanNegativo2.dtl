@@ -1,0 +1,10 @@
+[style name="Style llamada"]
+join "Chen Zhenhua" center
+"Ethan Caldwell": El espionaje y las infiltraciones son más comunes de lo que nos gustaría.
+- Es necesario aumentar nuestras defensas
+	[signal arg="positivaEthanUS"]
+	[signal arg="positivaChenCH"]
+	"Ethan Caldwell": Si no tomamos medidas adicionales, no podemos estar seguros de lo que está sucediendo dentro de nuestras fronteras.
+- Tal vez necesitamos una estrategia más sutil, algo menos visible, para lidiar con estas amenazas
+	[signal arg="negativaEthanUS"]
+	"Ethan Caldwell": A veces, ser más sutil no es la mejor opción.

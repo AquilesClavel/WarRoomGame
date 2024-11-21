@@ -1,0 +1,12 @@
+[style name="Style llamada"]
+join "Ethan Caldwell" center
+"Ethan Caldwell": No voy a permitir que ningún país venga aquí a dictarnos lo que debemos hacer.
+- La soberanía es la base de nuestra fuerza. No podemos permitir que nadie cruce nuestras fronteras.
+	[signal arg="positivaEthanUS"]
+	[signal arg="positivaKimKR"]
+	"Ethan Caldwell": Si no defendemos nuestra soberanía, ¿qué nos queda?
+- El respeto hacia la soberanía es clave,hay que saber garantizar nuestra seguridad a largo plazo.
+	[signal arg="negativaEthanUS"]
+	[signal arg="negativaKimKR"]
+	[signal arg="negativaDimitriRU"]
+	"Ethan Caldwell": Debemos ser duros si queremos mantenernos en la cima.

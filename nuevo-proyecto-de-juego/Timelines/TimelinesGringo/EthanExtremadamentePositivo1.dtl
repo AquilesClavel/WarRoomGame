@@ -1,0 +1,17 @@
+[style name="Style llamada"]
+join "Ethan Caldwell" center
+"Ethan Caldwell": Hemos logrado avances significativos en nuestra seguridad. Los sistemas de vigilancia están más fuertes que nunca.
+- Es mejor reforzar nuestras capacidades internas antes de confiar demasiado en los demás.
+	[signal arg="negativaEthanUS"]
+	[signal arg="positivaChenCH"]
+	[signal arg="positivaDimitriRU"]
+	"Ethan Caldwell": No podemos hacer todo por nuestra cuenta
+- No debemos olvidarnos de la diplomacia. Mantener la calma es clave para evitar cualquier malentendido
+	[signal arg="positivaEthanUS"]
+	[signal arg="negativaKimKR"]
+	"Ethan Caldwell": Tenemos que estar preparados para todo.
+- Es el momento perfecto para consolidar nuestras alianzas y fortalecer aún más nuestra defensa.
+	[signal arg="positivaEthanUS"]
+	[signal arg="negativaKimKR"]
+	[signal arg="negativaDimitriRU"]
+	"Ethan Caldwell": Con alianzas sólidas y una defensa fuerte, no hay nada que nos detenga.

@@ -1,0 +1,15 @@
+[style name="Style llamada"]
+join "Ethan Caldwell" center
+"Ethan Caldwell": Nuestro sistema económico ha demostrado una enorme capacidad de recuperación.
+- Deberíamos seguir fortaleciendo nuestras capacidades internas, invirtiendo más en el crecimiento de las industrias clave
+	[signal arg="positivaEthanUS"]
+	[signal arg="negativaKimKR"]
+	"Ethan Caldwell": La autosuficiencia es crucial
+- Deberíamos empezar a abrir más el mercado a nuevas ideas y tecnologías . La globalización nos ha beneficiado
+	[signal arg="positivaEthanUS"]
+	[signal arg="positivaChenCH"]
+	[signal arg="positivaDimitriRU"]
+	"Ethan Caldwell": Lo global es importante, pero debemos ser selectivos. No todo lo que viene del exterior es necesariamente positivo para nuestro futuro.
+- Mejor que sigamos con nuestra línea, sin aceptar influencias externas.
+	[signal arg="negativaEthanUS"]
+	"Ethan Caldwell": El aislamiento puede ser arriesgado.

@@ -1,0 +1,10 @@
+[style name="Style llamada"]
+join "Chen Zhenhua" center
+"Chen Zhenhua": La diplomacia es un arte tanto como una ciencia. ¿Qué opinas de ceder en un punto para ganar en otro?
+- Es tan importante como saber cuándo mantenerse firme.
+	[signal arg="positivaChenCH"]
+	"Chen Zhenhua": La flexibilidad puede ser la mejor estrategia en el tablero de juego.
+- Ceder es abrir la puerta a más demandas. Es mejor evitarlo siempre.
+	[signal arg="negativaChenCH"]
+	[signal arg="positivaDimitriRU"]
+	"Chen Zhenhua": La negociación exige adaptabilidad

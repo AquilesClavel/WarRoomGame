@@ -1,0 +1,11 @@
+[style name="Style llamada"]
+join "Chen Zhenhua" center
+"Chen Zhenhua": Estamos logrando algo extraordinario aquí, {nombreJugador}. Pero incluso en la mejor cooperación, siempre hay margen para mejorar. ¿Cómo decides qué aspecto abordar primero?
+- Primero se deben fortalecer las bases, para que todo lo demás fluya naturalmente.
+	[signal arg="positivaChenCH"]
+	[signal arg="positivaDimitriRU"]
+	"Chen Zhenhua": Sin bases sólidas, cualquier progreso se desmorona.
+- Lo más urgente siempre debe ser prioridad. Todo lo demás puede esperar.
+	[signal arg="negativaChenCH"]
+	[signal arg="positivaEthanUS"]
+	"Chen Zhenhua": Un enfoque práctico...

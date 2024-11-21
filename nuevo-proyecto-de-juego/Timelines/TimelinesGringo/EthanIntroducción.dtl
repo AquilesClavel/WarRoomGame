@@ -1,0 +1,11 @@
+[style name="Style llamada"]
+join "Ethan Caldwell" center
+"Ethan Caldwell": Soy Ethan, líder de los Estados Unidos. Mi país siempre está en el centro de la acción, ya sea por seguridad, economía o... política global. Tienes que entender, cada decisión que tomamos tiene repercusiones, tanto dentro de nuestras fronteras como fuera de ellas.
+"Ethan Caldwell": La seguridad es mi prioridad, y no tolero a quienes intentan socavarla. Espías, intromisiones extranjeras... eso no se permite aquí. Mi gente merece paz y prosperidad, y si eso significa tomar decisiones difíciles, entonces así será.
+"Ethan Caldwell": En fin, espero que podamos trabajar juntos. Aunque, me gustaría saber... ¿qué opinas tú sobre mantener la soberanía nacional 
+- La soberanía nacional es algo que siempre debe prevalecer
+	[signal arg="positivaEthanUS"]
+	"Ethan Caldwell": Veo que tenemos ideales comunes...
+- En un mundo interconectado, a veces es necesario ceder un poco en nombre de la cooperación global.
+	[signal arg="negativaEthanUS"]
+	"Ethan Caldwell": Ya veo . . .

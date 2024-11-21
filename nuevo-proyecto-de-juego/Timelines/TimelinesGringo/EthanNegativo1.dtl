@@ -1,0 +1,15 @@
+[style name="Style llamada"]
+join "Ethan Caldwell" leftmost
+"Ethan Caldwell": La situación actual es complicada. Aunque hemos logrado ciertos avances, las tensiones globales han aumentado. La falta de confianza entre las potencias más grandes está afectando nuestras relaciones de manera significativa.
+- Lo mejor será tomar un enfoque más independiente, para no depender de la inestabilidad externa.
+	[signal arg="negativaEthanUS"]
+	[signal arg="positivaChenCH"]
+	[signal arg="positivaDimitriRU"]
+	[signal arg="positivaKimKR"]
+	"Ethan Caldwell": La independencia puede ser buena, pero también puede aislarnos.
+- Quizás debemos ser más cautelosos. No podemos arriesgarnos a involucrarnos demasiado con otros países
+	[signal arg="positivaEthanUS"]
+	"Ethan Caldwell": Interesante...
+- Es crucial que reforcemos nuestras relaciones internacionales ahora más que nunca.
+	[signal arg="negativaEthanUS"]
+	"Ethan Caldwell": Interesante...
