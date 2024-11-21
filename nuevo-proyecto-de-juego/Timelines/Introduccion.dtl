@@ -6,7 +6,7 @@ join "Agente A" leftmost [animation="Fade In" length="1.0"]
 "Agente A": Perfecto, agente {nombreJugador}, tu misión es clara\: mediar, negociar y encontrar una solución pacífica a esta situación.
 "Agente A": Los líderes de las naciones más poderosas están en una negociación frágil que podría decidir el destino de la humanidad. Un solo error… y el mundo podría caer en una guerra nuclear.
 "Agente A": Millones de vidas están en tus manos. ¿Estás listo para asumir este desafío?"
-- Entendido, Agente A.
+- Entendido, Agente Aurora.
 - ...
 join "Diego Reinhardt" rightmost
 "Diego Reinhardt": Diego Reinhardt. Experto en ciberseguridad y encargado de que cada palabra que digas, {nombreJugador}, permanezca entre nosotros. Este no es un juego para mí, es mi trabajo. Y mi trabajo es impecable

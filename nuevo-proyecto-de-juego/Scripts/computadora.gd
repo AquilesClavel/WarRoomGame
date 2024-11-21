@@ -299,7 +299,7 @@ func escogerTimelineRuso():
 
 #FUNCIONES ETHAN
 func _on_ethanus_pressed() -> void:
-	CallChen.show()
+	CallEthan.show()
 	if primeraUS == false:
 		Dialogic.start("EthanIntroduccion")
 		primeraUS = true
