@@ -20,6 +20,7 @@ func _on_video_stream_player_finished() -> void:
 	vidplayer.set_stream(video_loop)
 	vidplayer.play()
 	vidplayer.set_loop(true)
+	Dialogic.start("FinalMalo")
 	
 
 func _on_button_pressed() -> void:

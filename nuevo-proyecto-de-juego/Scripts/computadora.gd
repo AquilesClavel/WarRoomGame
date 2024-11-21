@@ -61,11 +61,18 @@ var primeraUS = false
 func _ready() -> void:
 	hide()
 	manejar_victoria(" ")
+	manejar_victoria("2")
+	manejar_victoria("2")
+	manejar_victoria("2")
+	manejar_victoria("2")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+	#DEBUG PARA ESTADO NEUTRAL
+	#if Input.is_action_just_pressed("ui_page_down"):
+		#manejar_victoria("1")
 
 
 func _on_btn_ayuda_computadora_pressed() -> void:
@@ -142,7 +149,6 @@ func actualizarEstatusKimKR():
 			plusplusKim.set_self_modulate("ffffff1f")
 			
 	
-	print(estado_actual)
 
 var last_timelinesKR = {
 	"Estado Negativo": "",
@@ -250,7 +256,7 @@ func actualizarEstatusDimitriRU():
 			plusplusDimitri.set_self_modulate("ffffff1f")
 			
 	
-	print(estado_actual)
+	
 
 var last_timelinesRU = {
 	"Estado Negativo": "",
@@ -299,7 +305,7 @@ func escogerTimelineRuso():
 
 #FUNCIONES ETHAN
 func _on_ethanus_pressed() -> void:
-	CallChen.show()
+	CallEthan.show()
 	if primeraUS == false:
 		Dialogic.start("EthanIntroduccion")
 		primeraUS = true
@@ -637,3 +643,9 @@ func manejar_victoria(decision:String)->void:
 					Transicion.transition()
 					await Transicion.on_transition_finished
 					get_tree().change_scene_to_file("res://Escenas/final_neutral.tscn")
+	print(pila)
+	if pila.size()>0:
+		if pila[0]=="#":
+			caratristeGen.hide()
+			carafelizGen.hide()
+			caraneutraGen.show()

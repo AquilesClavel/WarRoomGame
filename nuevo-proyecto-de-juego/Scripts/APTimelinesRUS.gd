@@ -3,7 +3,7 @@ extends Node
 @onready var AutomataUS = get_node("/root/Lideres/Computadora/ColorRect/DIMITRIRU")
 @onready var AutomataKR = get_node("/root/Lideres/Computadora/ColorRect/KIMKR")
 @onready var AutomataCH = get_node("/root/Lideres/Computadora/ColorRect/CHENCH")
-
+var estaBloqueado : bool = false
 #Estados del Automata
 enum Estados {
 	Inicial,
@@ -104,9 +104,11 @@ func obtener_estado():
 		Estados.ExtremadamenteNegativo:
 			return "Estado Extremadamente Negativo"
 		Estados.Bloqueado:
-			return "Estado Bloqueado"
-			if AutomataCH.obtener_estado() == Estados.Bloqueado and AutomataKR.obtener_estado() == Estados.Bloqueado and AutomataUS.obtener_estado() == Estados.Bloqueado:
+			estaBloqueado = true
+			if AutomataCH.estaBloqueado and AutomataKR.estaBloqueado and AutomataUS.estaBloqueado:
 				Computadora.manejar_victoria(" ")
+				print("Vacio automata caca")
+			return "Estado Bloqueado"
 		_:
 			return "Estado desconocido"
 
@@ -120,13 +122,13 @@ func _ready() -> void:
 func Evento(decision:String):
 	if decision == "negativaDimitriRU":
 		transcionar("M")
-		if obtener_estado() != Estados.Bloqueado:
+		if obtener_estado() != "Estado Bloqueado":
 			Computadora.manejar_victoria("2")
 		print("negatvo")
 	
 	if decision == "positivaDimitriRU":
 		transcionar("B")
-		if obtener_estado() != Estados.Bloqueado:
+		if obtener_estado() != "Estado Bloqueado":
 			Computadora.manejar_victoria("1")
 		print("positivo")
 	

@@ -20,3 +20,4 @@ func _on_video_stream_player_finished() -> void:
 	Transicion.transition()
 	await Transicion.on_transition_finished
 	text_rect.visible = true
+	Dialogic.start("FinalNeutral")
