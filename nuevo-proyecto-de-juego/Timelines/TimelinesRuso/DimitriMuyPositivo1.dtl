@@ -1,0 +1,10 @@
+[style name="Style llamada"]
+"Dimitri Volkov": No es común encontrar a alguien que entienda la complejidad de la estabilidad global, {nombreJugador}. Después de tantas tensiones, quizás aún haya forma de encontrar una solución duradera. 
+"Dimitri Volkov":  ¿Cómo ves el futuro de la estabilidad mundial, considerando los intereses de grandes potencias como la nuestra?
+- Es clave la cooperación.
+	"Dimitri Volkov": Tienes razón, la cooperación puede ser el pilar para la paz, aunque muchos aún no lo entienden. Si seguimos este camino, podríamos encontrar un equilibrio que beneficie a todos. Este enfoque podría cambiar la dirección de las cosas si las naciones lo apoyan.
+	[signal arg="positivaDimitriRU"]
+	[signal arg="positivaChenCH"]
+- El equilibrio es esencial.
+	"Dimitri Volkov": El equilibrio… Es un concepto que muchos olvidan. Si fuéramos capaces de mantenerlo, tal vez no estaríamos en este punto. Pero la flexibilidad es algo que, si se logra, puede prevenir un colapso total.
+	[signal arg="negativaDimitriRU"]

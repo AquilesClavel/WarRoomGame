@@ -1,0 +1,11 @@
+[style name="Style llamada"]
+"Dimitri Volkov": La historia nos ha enseñado que las grandes potencias deben mantenerse firmes en su influencia. Muchos nos critican, pero Rusia siempre ha tenido un papel central en los eventos globales.
+"Dimitri Volkov": ¿Qué piensas sobre la posición de Rusia en el escenario internacional?"
+- Rusia es clave, pero debe cooperar
+	"Dimitri Volkov": Cooperar, sí… Es un término que muchos malinterpretan. Si Rusia muestra disposición para colaborar sin perder su poder, podría cambiar las reglas del juego. Si las otras potencias comprenden esto, podríamos hallar un camino hacia una estabilidad duradera.
+	[signal arg="positivaDimitriRU"]
+	[signal arg="positivaChenCH"]
+- Rusia ha sido demasiado agresiva.
+	"Dimitri Volkov": ¡¿Agresiva?! Es fácil hablar desde una posición cómoda, pero no entiendes las amenazas reales que enfrentamos. Si crees que el mundo puede avanzar sin reconocer la fortaleza de Rusia, te equivocas. La debilidad no tiene cabida en el futuro que se nos avecina. Tus palabras no hacen más que alimentar la división.
+	[signal arg="negativaDimitriRU"]
+	[signal arg="positivaEthanUS"]

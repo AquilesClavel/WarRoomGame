@@ -1,0 +1,10 @@
+[style name="Style llamada"]
+"Dimitri Volkov": Me complace ver que al menos algunos entienden que el equilibrio global es esencial. Rusia tiene muchas décadas de experiencia en el escenario internacional.
+"Dimitri Volkov": Pero siempre hay espacio para nuevas ideas. ¿Cómo planeas asegurarte de que las potencias extranjeras no subestimen nuestra posición?"
+- La paz es posible cuando las potencias no sienten amenazadas, necesitamos proteger a todos los involucrados, Rusia incluida.
+	"Dimitri Volkov": Exactamente, {nombreJugador}. Si puedes garantizar que no se nos dé por sentados y que nuestra posición sea respetada, podríamos empezar a ver los frutos de esta conversación.
+	[signal arg="positivaDimitriRU"]
+- Si Rusia debe ser vista como la nación más poderosa, debe imponer su voluntad sobre los demás.
+	"Dimitri Volkov": Eso es una visión peligrosa, {nombreJugador}. Creer que Rusia puede seguir una ruta de dominio sin consenso solo llevará a un conflicto más grande. Necesitas pensar más allá de la supremacía nacional.
+	[signal arg="negativaDimitriRU"]
+	[signal arg="negativaEthanUS"]

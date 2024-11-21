@@ -1,0 +1,11 @@
+[style name="Style llamada"]
+"Kim Tae-woo": Veo que has estado mostrándote razonable y comprensivo, algo que rara vez ocurre con los países occidentales. Quizás, al final, podamos encontrar un camino hacia la paz.
+"Kim Tae-woo": ¿Qué opinas de que nuestra nación reciba ayuda internacional para la reconstrucción? 
+- La ayuda externa siempre es bienvenida, siempre que no comprometa la autonomía.
+	"Kim Tae-woo": Muy bien, comprendes la importancia de la soberanía. Estoy dispuesto a explorar esta opción, pero en mis términos. La cooperación no debe ser una debilidad, sino una oportunidad para mostrarle al mundo lo que somos capaces de hacer.
+	[signal arg="positivaKimKR"]
+	[signal arg="positivaChenCH"]
+- El aislamiento puede ser una opción, pero la cooperación puede acelerar el progreso.
+	"Kim Tae-woo": Me agrada tu disposición a cooperar, pero debes entender que debemos mantenernos firmes en nuestra independencia. 
+	[signal arg="negativaKimKR"]
+	[signal arg="negativaEthanUS"]

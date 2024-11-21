@@ -1,0 +1,10 @@
+[style name="Style llamada"]
+"Kim Tae-woo": El concepto de libertad que muchos defienden no es más que un caos disfrazado. Los ciudadanos son incapaces de ver el peligro de vivir sin control.
+"Kim Tae-woo": ¿Qué opinas sobre el control del estado para mantener la estabilidad, incluso si eso implica restringir algunas libertades?"
+- En tiempos de crisis, el control del estado es fundamental para mantener el orden.
+	"Kim Tae-woo": Sabes lo que está en juego. El orden solo se puede mantener bajo el control firme del estado. No hay espacio para el caos en tiempos de crisis.
+	[signal arg="positivaKimKR"]
+	[signal arg="positivaChenCH"]
+- Un gobierno con control total puede ser peligroso, pero también es cierto que sin control la sociedad se desmorona.
+	"Kim Tae-woo": ¿Por qué dudar del control total? La estabilidad es más importante que cualquier libertad individual. Un gobierno fuerte es la única garantía.
+	[signal arg="negativaKimKR"]

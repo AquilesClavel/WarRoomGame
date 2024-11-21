@@ -1,0 +1,12 @@
+[style name="Style llamada"]
+"Dimitri Volkov": Hablemos de la libertad de prensa, {nombreJugador}. En mi país, sabemos lo que pasa cuando los medios están fuera de control.
+"Dimitri Volkov": ¿Realmente crees que los medios deben ser tan libres como dicen los países occidentales, o hay límites que deberían ser impuestos?
+- Creo que la información debe ser libre, pero controlada de manera justa, para evitar manipulaciones.
+	"Dimitri Volkov": ¿Controlada de manera justa? Eso suena como algo razonable. Aunque los ideales de 'libertad de prensa' son hermosos, en la práctica, sólo sirven para crear caos y debilitar a los países. Si estás dispuesto a escuchar, podremos trabajar juntos en esto.
+	[signal arg="positivaDimitriRU"]
+	[signal arg="positivaKimKR"]
+	[signal arg="positivaChenCH"]
+- Los medios deberían ser completamente libres, sin ninguna censura ni restricciones. La gente tiene derecho a saberlo todo.
+	"Dimitri Volkov": ¡Ja! ¿Es esa tu idea de libertad? En Rusia, sabemos lo que ocurre cuando se deja que todos hablen sin control. La verdad se distorsiona y los enemigos del estado ganan fuerza. No puedo aceptar esa visión, {nombreJugador}. Y no espero que me lo hagas repetir.
+	[signal arg="negativaDimitriRU"]
+	[signal arg="positivaEthanUS"]

@@ -1,0 +1,15 @@
+[style name="Style llamada"]
+"Kim Tae-woo": Así que has llegado hasta aquí con tu lenguaje diplomático, pero ¿qué sabes realmente de poder? La paz no es algo que se logre con sonrisas y tratados.
+"Kim Tae-woo": Se obtiene con fuerza. La historia lo ha demostrado. He estado observando el comportamiento de las potencias extranjeras, pero me pregunto, ¿cómo debería reaccionar si tu país estuviera comprometido en una alianza con mi enemigo?
+- La lealtad a las alianzas es importante, pero no a costa de nuestra supervivencia.
+	"Kim Tae-woo": ¿De verdad crees que la supervivencia se consigue abandonando tus aliados en el momento de la verdad? ¡Cobarde! Si no puedes defender a tus amigos, no serás más que un peón en los juegos de las potencias extranjeras. No puedo confiar en alguien así.
+	[signal arg="negativaKimKR"]
+	[signal arg="negativaDimitriRU"]
+	[signal arg="negativaChenCH"]
+- Es simple, la lealtad debe estar por encima de todo. Si haces un pacto, debes cumplirlo.
+	"Kim Tae-woo": ¡Eso es lo que me gusta escuchar! La lealtad es lo único que realmente importa. No traiciones a los que te ayudan. Estás en el camino correcto.
+	[signal arg="positivaKimKR"]
+	[signal arg="positivaDimitriRU"]
+- Las alianzas son esenciales, pero si comprometen nuestra integridad o futuro, no deben ser aceptadas.
+	"Kim Tae-woo": Hmm, comprendo tu punto. Aunque no estés dispuesto a entregar tu lealtad por nada, lo que estás diciendo es que, si las cosas se ponen difíciles, te abandonarías a ti mismo. Esa es una actitud que no inspira respeto.
+	[signal arg="negativaKimKR"]

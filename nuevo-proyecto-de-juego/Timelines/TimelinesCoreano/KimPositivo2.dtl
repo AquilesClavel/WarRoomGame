@@ -1,0 +1,15 @@
+[style name="Style llamada"]
+"Kim Tae-woo": He considerado que la guerra constante no nos ha llevado a ningún lado. Tal vez, la cooperación con el resto del mundo podría ser el cambio que necesitamos.
+"Kim Tae-woo":  Quizás podemos reducir las tensiones a través de proyectos conjuntos.
+"Kim Tae-woo": ¿Estarías dispuesto a colaborar con nosotros en el desarrollo de proyectos que beneficien a todas nuestras naciones, con la condición de que se mantenga el control sobre nuestra soberanía?
+- Tu oferta suena interesante, pero me pregunto si realmente podemos confiar en tus intenciones a largo plazo.
+	"Kim Tae-woo": La confianza se construye con tiempo, pero si nos cerramos a las oportunidades, nos condenamos. Considera que esta podría ser nuestra última oportunidad para cambiar.
+- ¿Qué tipo de proyectos estás considerando? Es importante saber exactamente en qué nos estamos involucrando.
+	"Kim Tae-woo": Tus preguntas son razonables. Estoy dispuesto a ser transparente en cuanto a nuestras propuestas. Si las potencias se muestran cooperativas, puedo garantizar estabilidad.
+	[signal arg="positivaKimKR"]
+	[signal arg="negativaEthanUS"]
+	[signal arg="positivaDimitriRU"]
+- No me parece que los proyectos conjuntos sean la respuesta si no hay un cambio genuino en tu régimen.
+	"Kim Tae-woo": No confías en mí, lo comprendo. Pero la alternativa es continuar el aislamiento, y eso solo llevará a la guerra. ¿De verdad quieres eso?
+	[signal arg="negativaKimKR"]
+	[signal arg="positivaEthanUS"]

@@ -1,0 +1,14 @@
+[style name="Style llamada"]
+"Kim Tae-woo": Escucho constantemente que se me acusa de tener un régimen opresivo. ¿Por qué la gente no entiende que lo que hacemos es por la supervivencia de nuestra nación?
+"Kim Tae-woo": ¿Cómo explicas que el mundo nos mire con desprecio mientras otros países hacen lo mismo o peor?
+- Las críticas externas no siempre son justas, pero a veces es mejor escuchar para poder mejorar.
+	"Kim Tae-woo": ¿Me estás diciendo que debo escuchar a los enemigos de nuestra nación? ¡Eso es una debilidad! Si empezamos a ceder a las críticas, nos destruirán. No soy como ellos.
+	[signal arg="negativaKimKR"]
+	[signal arg="positivaEthanUS"]
+- Es evidente que algunas naciones quieren mantener el control sobre todos. No deberíamos preocuparnos por lo que dicen.
+	"Kim Tae-woo": ¡Eres igual de débil que los demás! ¿Qué propones? ¿Seguir escuchando a aquellos que nos llaman terroristas solo por querer defender a nuestro pueblo?
+	[signal arg="negativaKimKR"]
+- Creo que los países deben ser responsables de sus propios gobiernos. Que se enfrenten a sus propios problemas primero.
+	"Kim Tae-woo": ¡Exactamente! ¡El mundo no tiene derecho a meterse en nuestros asuntos internos! Si ellos no pueden manejar sus propios desastres, ¿cómo se atreven a criticarme? ¡Esto es nuestra lucha!
+	[signal arg="positivaKimKR"]
+	[signal arg="positivaDimitriRU"]

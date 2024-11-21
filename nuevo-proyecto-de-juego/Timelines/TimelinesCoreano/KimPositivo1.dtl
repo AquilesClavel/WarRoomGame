@@ -1,0 +1,11 @@
+[style name="Style llamada"]
+"Kim Tae-woo": He estado reflexionando sobre nuestra posición. Las sanciones nos han debilitado, pero he considerado que, tal vez, la paz es una opción más viable para nuestra nación.
+"Kim Tae-woo": ¿Estarías dispuesto a demostrar respeto por nuestro régimen para avanzar hacia un acuerdo?"
+- ¿Estás seguro de que este es el camino? A veces la diplomacia es solo una fachada.
+	"Kim Tae-woo": Entiendo tus dudas, pero debemos considerar las alternativas. La diplomacia es la única opción que nos queda si no queremos un conflicto global.
+- Creo que cada nación tiene derecho a su autonomía, pero no podemos ignorar las implicaciones para el resto del mundo.
+	"Kim Tae-woo": Tus palabras muestran una mente abierta. Si respetamos nuestros límites, podemos avanzar en la paz. La guerra nunca ha sido la solución definitiva.
+	[signal arg="positivaKimKR"]
+- Es difícil creer que no hay más intereses ocultos en tus palabras.
+	"Kim Tae-woo": Desconfías de mis intenciones, pero la historia está cambiando. No puedo hacer más que ofrecer una vía de paz, si no estás dispuesto a aceptarla, no sé qué más decirte.
+	[signal arg="negativaKimKR"]

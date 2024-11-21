@@ -1,0 +1,14 @@
+[style name="Style llamada"]
+"Kim Tae-woo": Los países como los tuyos hablan mucho sobre desarme, pero no entienden que nuestro poder militar es nuestra única garantía de supervivencia. 
+"Kim Tae-woo": Las amenazas externas siempre están al acecho. ¿Qué opinas sobre la desmilitarización y las iniciativas de paz global?
+- La desmilitarización podría ser un ideal, pero la realidad es que la preparación militar siempre será necesaria para defenderse.
+	"Kim Tae-woo": Finalmente, alguien que entiende. La preparación militar no es una opción, es una necesidad. El desarme es una ilusión que las potencias usan para debilitar a los países más pequeños.
+	[signal arg="positivaKimKR"]
+	[signal arg="positivaDimitriRU"]
+- Creo que la paz solo se puede lograr con desarme, aunque entiendo que algunos países no lo verían así.
+	"Kim Tae-woo": La paz es importante, pero el desarme no se puede aplicar a todos de la misma manera. El poder militar es una herramienta que no se debe olvidar.
+	[signal arg="negativaKimKR"]
+	[signal arg="negativaEthanUS"]
+- La paz global requiere más diplomacia que armas, pero sé que el mundo no está listo.
+	"Kim Tae-woo": La diplomacia es solo una excusa para no prepararse. Los países que no se protegen están condenados a caer ante las grandes potencias.
+	[signal arg="negativaKimKR"]

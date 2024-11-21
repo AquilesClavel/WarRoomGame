@@ -1,0 +1,10 @@
+[style name="Style llamada"]
+"Dimitri Volkov": Me agrada ver que llegas con una actitud pragmática, {nombreJugador}. Pero no olvides que Rusia ha sufrido demasiado por las presiones internacionales.
+"Dimitri Volkov": ¿Qué propones tú para que podamos avanzar sin perder nuestra dignidad y poder?"
+- Lo justo es que su influencia global se respete, pero también debemos encontrar soluciones que favorezcan la cooperación.
+	"Dimitri Volkov": Eso suena razonable... Si podemos asegurar que mis intereses estén protegidos mientras colaboramos con los demás, podría ver esto como una oportunidad para avanzar.
+	[signal arg="positivaDimitriRU"]
+- Rusia necesita estar al mando, y cualquier acuerdo debe reflejar ese poder.
+	"Dimitri Volkov": Esa es una visión demasiado estrecha. No busco imponer mi poder sobre los demás, {nombreJugador}, pero si no hay respeto mutuo, no hay trato posible. 
+	[signal arg="negativaDimitriRU"]
+	[signal arg="negativaEthanUS"]

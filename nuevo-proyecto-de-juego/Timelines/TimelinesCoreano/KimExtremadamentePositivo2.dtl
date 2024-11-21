@@ -1,0 +1,8 @@
+[style name="Style llamada"]
+"Kim Tae-woo": En los últimos años, hemos sido presionados desde fuera para realizar reformas, pero ahora creo que estamos en el punto en el que podemos tomar el control de nuestra evolución interna. 
+"Kim Tae-woo": ¿Crees que un cambio gradual en nuestra estructura podría llevarnos a un futuro más próspero sin perder nuestra identidad como nación?
+- Un cambio gradual es esencial para mantener el equilibrio. No es necesario hacer todo de golpe.
+	[signal arg="positivaKimKR"]
+- Si no cambian, se quedaran atrás. La apertura es clave para la nueva era. Sin reformar, nunca avanzaran en el escenario global.
+	[signal arg="negativaKimKR"]
+	[signal arg="negativaChenCH"]
